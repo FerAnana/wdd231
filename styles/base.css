@@ -1,0 +1,84 @@
+:root {
+  --primary-color: #1b1b3a;
+  --prmary-accent: #693668;
+  --secondary-color: #a74482;
+  --secondary-accent: #f84aa7;
+}
+
+/*************** SITE WIDE ***************/
+* {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+/*************** HEADER ***************/
+header {
+  display: grid;
+  background-color: var(--primary-color);
+  color: white;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  align-items: end;
+  border-bottom: solid 1px #ddd;
+  column-gap: 8px;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 3px;
+}
+
+header span {
+  font-size: 1.2rem;
+}
+
+/*************** HAMBURGER NAVIGATION ***************/
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+  content: "\2630";
+  color: var(--secondary-color);
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+  background-color: var(--prmary-accent);
+}
+
+.navigation ul {
+  list-style-type: none;
+  color: white;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: px;
+}
+
+/*************** FOOTER ***************/
+footer {
+  background-color: var(--primary-color);
+}
+
+.social-media img {
+  width: 44px;
+  height: auto;
+}
