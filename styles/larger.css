@@ -7,7 +7,12 @@
   }
 
   header {
-    grid-template-columns: 24px auto;
+    grid-template-columns: 40px auto;
+  }
+
+  header span {
+    font-family: var(--heading-font);
+    align-self: center;
   }
 
   .hamburger {
@@ -30,7 +35,7 @@
 
   /*************** MAIN ***************/
   .main-content {
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 2fr 1fr;
   }
 
   .about-me {
@@ -46,5 +51,21 @@
   .certificates {
     grid-column: 1/3;
     grid-row: 2/3;
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .courses button {
+    border-radius: 5px;
+    padding: 7.5px;
+  }
+
+  .courses span {
+    grid-column: 1/4;
   }
 }

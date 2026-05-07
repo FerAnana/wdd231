@@ -26,7 +26,7 @@ header {
   color: white;
   grid-template-columns: 24px auto 44px;
   padding: 5px 0 5px 10px;
-  align-items: end;
+  align-items: center;
   border-bottom: solid 1px #ddd;
   column-gap: 8px;
 }
@@ -35,7 +35,6 @@ header img {
   display: block;
   width: 100%;
   height: auto;
-  padding-bottom: 3px;
 }
 
 header span {
@@ -143,6 +142,39 @@ section h2 {
   width: 90%;
   height: auto;
   padding-bottom: 1rem;
+}
+
+.course-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.course-selector button {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: solid 2px black;
+  border-radius: 10px;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.courses button {
+  border-radius: 5px;
+  padding: 7.5px;
+}
+
+.courses span {
+  text-align: center;
+  margin-top: .5rem;
 }
 
 /*************** FOOTER ***************/

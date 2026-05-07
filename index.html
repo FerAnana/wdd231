@@ -18,6 +18,8 @@
       rel="stylesheet"
     />
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
     <title>WDD 231 - Fernando Añaña</title>
   </head>
   <body>
@@ -60,10 +62,12 @@
         </section>
         <section class="certificates">
           <h2>Web Certificate Courses</h2>
-          <button id="all">All</button>
-          <button id="cse">CSS</button>
-          <button id="wdd">WDD</button>
-          <div id="classes"></div>
+          <div class="course-selector">
+            <button id="all">All courses</button>
+            <button id="cse">CSE courses</button>
+            <button id="wdd">WDD courses</button>
+          </div>
+          <div class="courses"></div>
         </section>
       </div>
     </main>
