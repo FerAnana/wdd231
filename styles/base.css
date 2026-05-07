@@ -3,12 +3,20 @@
   --prmary-accent: #693668;
   --secondary-color: #a74482;
   --secondary-accent: #f84aa7;
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "Lato", sans-serif;
 }
 
 /*************** SITE WIDE ***************/
 * {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--body-font);
   box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  margin: 0 auto;
 }
 
 /*************** HEADER ***************/
@@ -63,22 +71,94 @@ header span {
 }
 
 .navigation ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-  color: white;
+  width: 100%;
+}
+
+.navigation li {
+  margin: 0;
+  border: solid 1px black;
+  width: 100%;
+}
+
+.current {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.current::after {
+  content: "📍";
+}
+
+.navigation a:hover {
+  background-color: var(--secondary-color);
 }
 
 .navigation a {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
   color: white;
   text-decoration: none;
-  padding-bottom: px;
+}
+
+/*************** MAIN ***************/
+.main-content {
+  display: grid;
+  gap: 1rem;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+}
+
+section h2 {
+  background-color: var(--prmary-accent);
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0 0 1rem;
+}
+
+.about-me,
+.stu-photo {
+  background-color: lightgrey;
+}
+
+.about-me p {
+  padding: 0 1rem 0 1rem;
+}
+
+.stu-photo img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  padding-bottom: 1rem;
 }
 
 /*************** FOOTER ***************/
 footer {
   background-color: var(--primary-color);
+  color: white;
+  text-align: center;
 }
 
-.social-media img {
-  width: 44px;
+.social-media {
+  display: flex;
+  margin: 1rem 0;
+  background-color: white;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
   height: auto;
 }

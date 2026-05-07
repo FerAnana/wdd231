@@ -11,6 +11,12 @@
     <link rel="styleshhet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="scripts/navigation.js" defer></script>
     <title>WDD 231 - Fernando Añaña</title>
   </head>
@@ -29,18 +35,37 @@
     <main>
       <nav id="nav-bar" class="navigation">
         <ul>
-          <li class="current"><a href="#">Home</a></li>
+          <li><a href="#" class="current">Home</a></li>
           <li><a href="#">Chamber Project</a></li>
           <li><a href="#">Final Project</a></li>
         </ul>
       </nav>
       <h1>Home</h1>
-      <section>
-        <h2>About Me</h2>
-      </section>
-      <section>
-        <h2>Student Photo</h2>
-      </section>
+      <div class="main-content">
+        <section class="about-me">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eos
+            unde quaerat rem odio facere illum aspernatur fuga laborum tempora
+            hic ea accusantium labore amet, autem praesentium iste provident
+            vel. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quaerat odit tenetur ipsum, pariatur doloribus, eaque sed omnis ex
+            sit, in vero aliquam minima blanditiis magni quam ipsa provident rem
+            natus?
+          </p>
+        </section>
+        <section class="stu-photo">
+          <h2>Student Photo</h2>
+          <img src="images/fernando-anana.webp" alt="Fernando Añaña" />
+        </section>
+        <section class="certificates">
+          <h2>Web Certificate Courses</h2>
+          <button id="all">All</button>
+          <button id="cse">CSS</button>
+          <button id="wdd">WDD</button>
+          <div id="classes"></div>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="social-media">
@@ -57,6 +82,8 @@
           ><img src="images/facebook.svg" alt="facebook"
         /></a>
       </div>
+      <p>©<span id="currentYear"></span> Fernando Añaña - Uruguay</p>
+      <p id="lastModified"></p>
     </footer>
   </body>
 </html>
