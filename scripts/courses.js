@@ -88,7 +88,9 @@ function createCourseButton(allCourses) {
     let button = document.createElement("button");
 
     button.textContent = `${course.subject} ${course.number}`;
-    button.setAttribute("class", "completed-course");
+    if (course.completed === true) {
+      button.setAttribute("class", "completed-course");
+    }
     credits += course.credits;
 
     document.querySelector(".courses").appendChild(button);
@@ -96,5 +98,3 @@ function createCourseButton(allCourses) {
   span.innerHTML = `<span>The total credits for course listed above is ${credits}</span>`;
   document.querySelector(".courses").appendChild(span);
 }
-
-function styleCourseBtn() {}

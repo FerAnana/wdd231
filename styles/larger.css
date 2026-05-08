@@ -2,17 +2,26 @@
   header,
   main,
   footer {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
+  }
+
+  main {
+    padding: 0 0.5rem;
   }
 
   header {
     grid-template-columns: 40px auto;
+    padding-top: 8px;
   }
 
   header span {
     font-family: var(--heading-font);
     align-self: center;
+  }
+
+  header img {
+    padding-left: 8px;
   }
 
   .hamburger {
@@ -21,7 +30,7 @@
 
   .navigation {
     display: block;
-    background-color: var(--prmary-accent);
+    margin-top: 8px;
   }
 
   .navigation ul {
@@ -40,11 +49,6 @@
 
   .about-me {
     grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .stu-photo {
-    grid-column: 2/3;
     grid-row: 1/2;
   }
 
