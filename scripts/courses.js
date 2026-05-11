@@ -94,6 +94,9 @@ function createCourseButton(allCourses) {
     credits += course.credits;
 
     document.querySelector(".courses").appendChild(button);
+    button.addEventListener("click", () => {
+      alert(course.description);
+    });
   });
   span.innerHTML = `<span>The total credits for course listed above is ${credits}</span>`;
   document.querySelector(".courses").appendChild(span);
