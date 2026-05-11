@@ -1,0 +1,17 @@
+{
+  "family_name": "Añaña Nievas",
+  "move_in_date": "2026-06-19",
+  "number_of_people": 2,
+  "visited-by-bishopric": false,
+  "family_members": [
+    {
+      "name": "Fernando Añaña",
+      "gender": "m",
+      "birthdate": "2002-04-30"
+    },
+    { "name": "Sofía Nievas",
+      "gender": "f",
+      "birthdate": "2003-05-12"
+    }
+  ]
+}
