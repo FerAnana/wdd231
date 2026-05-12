@@ -1,0 +1,54 @@
+:root {
+  --heading-font: "Rubik", sans-serif;
+  --body-font: "Google Sans", sans-serif;
+}
+
+header,
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: darkgreen;
+  font-weight: bold;
+  font-family: var(--heading-font);
+}
+
+#cards {
+  display: grid;
+  gap: .5rem;
+  padding: 1rem;
+  box-shadow: 0 0 15px 1px black;
+  background-color: rgb(233, 233, 233);
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+#cards p {
+  margin: 0;
+  font-family: var(--body-font);
+}
+
+#cards section {
+  background-color: rgb(164, 216, 164);
+  text-align: center;
+  border: solid 1px rgb(0, 0, 79);
+}
+
+#cards img {
+  box-shadow: 0 0 5px 1px black;
+  margin: 1rem 0;
+  width: 150px;
+  height: auto;
+}
+
+footer {
+  margin: 2rem auto;
+  text-align: center;
+}
