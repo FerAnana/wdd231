@@ -1,0 +1,58 @@
+[
+  {
+    "comapny-name": "Farmashop",
+    "company-address": "Republica Argentina 1678",
+    "phone-number": 28484848,
+    "company-website": "https://tienda.farmashop.com.uy/",
+    "image-file": "https://tiendacdn.farmashop.com.uy/media/wysiwyg/Micrositio_Empresaa_2023_Header_Desktop.jpg",
+    "membership-level": "3"
+  },
+  {
+    "comapny-name": "La Popular",
+    "company-address": "Av. España 1452",
+    "phone-number": 47228682,
+    "company-website": "https://lapopular.uy/",
+    "image-file": "https://lapopular.uy/wp-content/uploads/2023/06/logo-la-popular-rojo.svg",
+    "membership-level": "1"
+  },
+  {
+    "comapny-name": "Office 2000",
+    "company-address": "Bulevar Artigas 770",
+    "phone-number": 19180,
+    "company-website": "https://office2000.com.uy/",
+    "image-file": "https://office2000.com.uy/cache/office%202000/logo/Office2000_logo-400x137fill.png",
+    "membership-level": "3"
+  },
+  {
+    "comapny-name": "Mac Center Shopping Urbano",
+    "company-address": "Luis A. de Herrera 925",
+    "phone-number": 47229911,
+    "company-website": "https://maccentershopping.com.uy/",
+    "image-file": "maccentershopping.com.uy/assets/logo_mcs.png",
+    "membership-level": "2"
+  },
+  {
+    "comapny-name": "Rodelu",
+    "company-address": "18 de Julio 1103",
+    "phone-number": 91445694,
+    "company-website": "https://www.rodelu.com.uy/",
+    "image-file": "https://www.rodelu.com.uy/_nuxt/logo-blanco.B2uy5ZuH.svg",
+    "membership-level": "1"
+  },
+  {
+    "comapny-name": "Farmashop",
+    "company-address": "Republica Argentina 1678",
+    "phone-number": 28484848,
+    "company-website": "https://tienda.farmashop.com.uy/",
+    "image-file": "",
+    "membership-level": "1"
+  },
+  {
+    "comapny-name": "Farmashop",
+    "company-address": "Republica Argentina 1678",
+    "phone-number": 28484848,
+    "company-website": "https://tienda.farmashop.com.uy/",
+    "image-file": "",
+    "membership-level": "1"
+  }
+]
