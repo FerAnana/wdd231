@@ -40,19 +40,19 @@
     "membership-level": "1"
   },
   {
-    "comapny-name": "Farmashop",
-    "company-address": "Republica Argentina 1678",
-    "phone-number": 28484848,
-    "company-website": "https://tienda.farmashop.com.uy/",
-    "image-file": "",
+    "comapny-name": "El Dorado",
+    "company-address": "Cerrito, Esquina 25 de Mayo",
+    "phone-number": 99801990,
+    "company-website": "https://www.eldorado.com.uy/",
+    "image-file": "https://eldoradouy.vtexassets.com/assets/vtex/assets-builder/eldoradouy.fizzmod-theme/5.0.1/img/logo2___c2f2226cd2891ec61ee83af2b91163cd.svg",
     "membership-level": "1"
   },
   {
-    "comapny-name": "Farmashop",
-    "company-address": "Republica Argentina 1678",
-    "phone-number": 28484848,
-    "company-website": "https://tienda.farmashop.com.uy/",
-    "image-file": "",
+    "comapny-name": "Indian",
+    "company-address": "18 de julio 1121",
+    "phone-number": 24009236,
+    "company-website": "https://www.indian.com.uy/",
+    "image-file": "https://f.fcdn.app/assets/commerce/www.indian.com.uy/11d6_3bb6/public/web/img/logo.svg",
     "membership-level": "1"
   }
 ]
