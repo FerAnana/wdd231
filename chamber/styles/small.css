@@ -68,11 +68,11 @@ footer {
   content: "\00D7";
 }
 
-/* .navigation {
-  display: none;
-} */
-
 .navigation {
+  display: none;
+}
+
+.navigation.show {
   display: block;
   margin: 0;
   width: 100%;
@@ -83,6 +83,7 @@ footer {
 }
 
 .navigation a {
+  display: block;
   text-decoration: none;
   color: black;
 }
