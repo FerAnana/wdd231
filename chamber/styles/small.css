@@ -20,7 +20,6 @@ footer {
 }
 
 /********* HEADER *********/
-
 .header-menu {
   display: grid;
   background-color: var(--secondary-color);
@@ -79,20 +78,44 @@ footer {
   background-color: var(--secondary-accent);
 }
 .navigation ul {
+  background-color: var(--secondary-color);
+  border-top: solid 1px var(--primary-color);
+  border-bottom: solid 1px var(--primary-color);
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
   list-style: none;
 }
 
 .navigation a {
+  background-color: var(--secondary-accent);
+  border-top: solid 1px var(--primary-color);
+  border-bottom: solid 1px var(--primary-color);
+  padding: 0.5rem 1rem;
   display: block;
   text-decoration: none;
   color: black;
 }
 
-/********* FOOTER *********/
+.navigation a:hover {
+  background-color: #ebb9b4;
+  font-weight: bold;
+}
 
+.navigation .current {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/********* MAIN *********/
+h1 {
+  font-family: var(--heading-font);
+}
+
+/********* FOOTER *********/
 footer {
   display: grid;
-  padding: 1rem 0 1rem .5rem;
+  padding: 1rem 0 1rem 0.5rem;
   gap: 1.5rem;
   line-height: 1.5rem;
   background-color: var(--secondary-color);
@@ -100,11 +123,11 @@ footer {
 }
 
 footer img {
-  margin: 1rem;
   width: 44px;
   height: auto;
 }
 
-.address, .student-info {
-  margin: 1rem 0;
+.address,
+.student-info {
+  margin: .5rem 0;
 }
