@@ -1,58 +1,58 @@
 [
   {
-    "comapny-name": "Farmashop",
-    "company-address": "Republica Argentina 1678",
-    "phone-number": 28484848,
-    "company-website": "https://tienda.farmashop.com.uy/",
-    "image-file": "https://tiendacdn.farmashop.com.uy/media/wysiwyg/Micrositio_Empresaa_2023_Header_Desktop.jpg",
-    "membership-level": "3"
+    "comapny_name": "Farmashop",
+    "company_address": "Republica Argentina 1678",
+    "phone_number": 28484848,
+    "company_website": "https://tienda.farmashop.com.uy/",
+    "image_file": "https://tiendacdn.farmashop.com.uy/media/wysiwyg/Micrositio_Empresaa_2023_Header_Desktop.jpg",
+    "membership_level": "3"
   },
   {
-    "comapny-name": "La Popular",
-    "company-address": "Av. España 1452",
-    "phone-number": 47228682,
-    "company-website": "https://lapopular.uy/",
-    "image-file": "https://lapopular.uy/wp-content/uploads/2023/06/logo-la-popular-rojo.svg",
-    "membership-level": "1"
+    "comapny_name": "Office 2000",
+    "company_address": "Bulevar Artigas 770",
+    "phone_number": 19180,
+    "company_website": "https://office2000.com.uy/",
+    "image_file": "https://office2000.com.uy/cache/office%202000/logo/Office2000_logo-400x137fill.png",
+    "membership_level": "3"
   },
   {
-    "comapny-name": "Office 2000",
-    "company-address": "Bulevar Artigas 770",
-    "phone-number": 19180,
-    "company-website": "https://office2000.com.uy/",
-    "image-file": "https://office2000.com.uy/cache/office%202000/logo/Office2000_logo-400x137fill.png",
-    "membership-level": "3"
+    "comapny_name": "La Popular",
+    "company_address": "Av. España 1452",
+    "phone_number": 47228682,
+    "company_website": "https://lapopular.uy/",
+    "image_file": "https://lapopular.uy/wp-content/uploads/2023/06/logo-la-popular-rojo.svg",
+    "membership_level": "1"
   },
   {
-    "comapny-name": "Mac Center Shopping Urbano",
-    "company-address": "Luis A. de Herrera 925",
-    "phone-number": 47229911,
-    "company-website": "https://maccentershopping.com.uy/",
-    "image-file": "maccentershopping.com.uy/assets/logo_mcs.png",
-    "membership-level": "2"
+    "comapny_name": "Mac Center Shopping Urbano",
+    "company_address": "Luis A. de Herrera 925",
+    "phone_number": 47229911,
+    "company_website": "https://maccentershopping.com.uy/",
+    "image_file": "maccentershopping.com.uy/assets/logo_mcs.png",
+    "membership_level": "2"
   },
   {
-    "comapny-name": "Rodelu",
-    "company-address": "18 de Julio 1103",
-    "phone-number": 91445694,
-    "company-website": "https://www.rodelu.com.uy/",
-    "image-file": "https://www.rodelu.com.uy/_nuxt/logo-blanco.B2uy5ZuH.svg",
-    "membership-level": "1"
+    "comapny_name": "Rodelu",
+    "company_address": "18 de Julio 1103",
+    "phone_number": 91445694,
+    "company_website": "https://www.rodelu.com.uy/",
+    "image_file": "https://www.rodelu.com.uy/_nuxt/logo-blanco.B2uy5ZuH.svg",
+    "membership_level": "1"
   },
   {
-    "comapny-name": "El Dorado",
-    "company-address": "Cerrito, Esquina 25 de Mayo",
-    "phone-number": 99801990,
-    "company-website": "https://www.eldorado.com.uy/",
-    "image-file": "https://eldoradouy.vtexassets.com/assets/vtex/assets-builder/eldoradouy.fizzmod-theme/5.0.1/img/logo2___c2f2226cd2891ec61ee83af2b91163cd.svg",
-    "membership-level": "1"
+    "comapny_name": "El Dorado",
+    "company_address": "Cerrito, Esquina 25 de Mayo",
+    "phone_number": 99801990,
+    "company_website": "https://www.eldorado.com.uy/",
+    "image_file": "https://eldoradouy.vtexassets.com/assets/vtex/assets-builder/eldoradouy.fizzmod-theme/5.0.1/img/logo2___c2f2226cd2891ec61ee83af2b91163cd.svg",
+    "membership_level": "1"
   },
   {
-    "comapny-name": "Indian",
-    "company-address": "18 de julio 1121",
-    "phone-number": 24009236,
-    "company-website": "https://www.indian.com.uy/",
-    "image-file": "https://f.fcdn.app/assets/commerce/www.indian.com.uy/11d6_3bb6/public/web/img/logo.svg",
-    "membership-level": "1"
+    "comapny_name": "Indian",
+    "company_address": "18 de julio 1121",
+    "phone_number": 24009236,
+    "company_website": "https://www.indian.com.uy/",
+    "image_file": "https://f.fcdn.app/assets/commerce/www.indian.com.uy/11d6_3bb6/public/web/img/logo.svg",
+    "membership_level": "1"
   }
 ]

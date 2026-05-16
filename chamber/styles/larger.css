@@ -1,0 +1,32 @@
+@media only screen and (min-width: 38rem) {
+  .hamburger {
+    display: none;
+  }
+
+  .header-menu {
+    grid-template-columns: 40px auto;
+  }
+
+  .header-menu span{
+    grid-column: 2/3;
+  }
+
+  .header-menu img{
+    grid-column: 1/2;
+  }
+
+  .navigation {
+    display: inline;
+    grid-column: 2/3;
+    flex-direction: row;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigation li {
+    flex: 1 1 100%;
+  }
+}

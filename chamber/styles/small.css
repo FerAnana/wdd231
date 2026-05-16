@@ -26,12 +26,12 @@ footer {
   grid-template-columns: 30px auto 44px;
   gap: 0.5rem;
   margin: 0;
-  padding: 0.5rem 1rem;
 }
 
 .header-menu img {
   grid-column: 1/2;
   width: 100%;
+  padding-left: 0.5rem;
   height: auto;
   align-self: center;
 }
@@ -73,6 +73,7 @@ footer {
 
 .navigation.show {
   display: block;
+  grid-column: 1/4;
   margin: 0;
   width: 100%;
   background-color: var(--secondary-accent);
@@ -129,5 +130,5 @@ footer img {
 
 .address,
 .student-info {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }

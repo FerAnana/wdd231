@@ -33,6 +33,7 @@
     />
     <script src="scripts/responsive-menu.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/members.js" defer></script>
     <title>Paysandú Chamber of Commerce</title>
   </head>
   <body>
@@ -47,19 +48,23 @@
         />
         <span><a href="#">Paysandú Chamber of Commerce</a></span>
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+        <nav id="nav-bar" class="navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="current">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav id="nav-bar" class="navigation">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#" class="current">Directory</a></li>
-          <li><a href="#">Join</a></li>
-          <li><a href="#">Discover</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
       <h1>Directory</h1>
-      <section class="members"></section>
+      <div class="grid-list">
+        <button id="grid" aria-label="Grid view">Grid</button>
+        <button id="list" aria-label="List view">List</button>
+      </div>
+      <div id="members"></div>
     </main>
     <footer>
       <div class="address">
