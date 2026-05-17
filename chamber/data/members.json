@@ -1,6 +1,6 @@
 [
   {
-    "comapny_name": "Farmashop",
+    "company_name": "Farmashop",
     "company_address": "Republica Argentina 1678",
     "phone_number": 28484848,
     "company_website": "https://tienda.farmashop.com.uy/",
@@ -8,7 +8,7 @@
     "membership_level": "3"
   },
   {
-    "comapny_name": "Office 2000",
+    "company_name": "Office 2000",
     "company_address": "Bulevar Artigas 770",
     "phone_number": 19180,
     "company_website": "https://office2000.com.uy/",
@@ -16,7 +16,7 @@
     "membership_level": "3"
   },
   {
-    "comapny_name": "La Popular",
+    "company_name": "La Popular",
     "company_address": "Av. España 1452",
     "phone_number": 47228682,
     "company_website": "https://lapopular.uy/",
@@ -24,7 +24,7 @@
     "membership_level": "1"
   },
   {
-    "comapny_name": "Mac Center Shopping Urbano",
+    "company_name": "Mac Center Shopping Urbano",
     "company_address": "Luis A. de Herrera 925",
     "phone_number": 47229911,
     "company_website": "https://maccentershopping.com.uy/",
@@ -32,7 +32,7 @@
     "membership_level": "2"
   },
   {
-    "comapny_name": "Rodelu",
+    "company_name": "Rodelu",
     "company_address": "18 de Julio 1103",
     "phone_number": 91445694,
     "company_website": "https://www.rodelu.com.uy/",
@@ -40,7 +40,7 @@
     "membership_level": "1"
   },
   {
-    "comapny_name": "El Dorado",
+    "company_name": "El Dorado",
     "company_address": "Cerrito, Esquina 25 de Mayo",
     "phone_number": 99801990,
     "company_website": "https://www.eldorado.com.uy/",
@@ -48,7 +48,7 @@
     "membership_level": "1"
   },
   {
-    "comapny_name": "Indian",
+    "company_name": "Indian",
     "company_address": "18 de julio 1121",
     "phone_number": 24009236,
     "company_website": "https://www.indian.com.uy/",
