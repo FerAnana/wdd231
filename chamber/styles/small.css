@@ -166,12 +166,16 @@ section {
     & > * {
       margin: 0.1rem;
     }
+
+    h3 {
+      display: none;
+    }
   }
 
   img {
     margin: 0.5rem auto;
     width: auto;
-    max-width: 100%;
+    max-width: 90%;
     height: 75px;
   }
 }

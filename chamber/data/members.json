@@ -4,7 +4,7 @@
     "company_address": "Republica Argentina 1678",
     "phone_number": 28484848,
     "company_website": "https://tienda.farmashop.com.uy/",
-    "image_file": "https://tiendacdn.farmashop.com.uy/media/wysiwyg/Micrositio_Empresaa_2023_Header_Desktop.jpg",
+    "image_file": "https://media.licdn.com/dms/image/v2/D4D0BAQGKUVyItdJT0w/company-logo_200_200/company-logo_200_200/0/1710441497733/farmashop_logo?e=1780531200&v=beta&t=kPJr19JrESnjmbkRimbCHpw_g9ITt231meBK4LyBFXM",
     "membership_level": "3"
   },
   {
@@ -28,15 +28,15 @@
     "company_address": "Luis A. de Herrera 925",
     "phone_number": 47229911,
     "company_website": "https://maccentershopping.com.uy/",
-    "image_file": "maccentershopping.com.uy/assets/logo_mcs.png",
+    "image_file": "https://maccentershopping.com.uy/assets/logo_mcs.png",
     "membership_level": "2"
   },
   {
-    "company_name": "Rodelu",
-    "company_address": "18 de Julio 1103",
-    "phone_number": 91445694,
-    "company_website": "https://www.rodelu.com.uy/",
-    "image_file": "https://www.rodelu.com.uy/_nuxt/logo-blanco.B2uy5ZuH.svg",
+    "company_name": "El Bar",
+    "company_address": "Luis A. de Herrera 955",
+    "phone_number": 98057858,
+    "company_website": "https://elbarpaysandu.com/",
+    "image_file": "https://elbarpaysandu.com/wp-content/uploads/2023/09/ELBAR_logo.png",
     "membership_level": "1"
   },
   {
