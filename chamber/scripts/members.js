@@ -15,7 +15,7 @@ getMembersData();
 const displayMembers = (data) => {
   data.forEach((element) => {
     let card = document.createElement("section");
-    let memberName = document.createElement("P");
+    let memberName = document.createElement("h3");
     let logo = document.createElement("img");
     let address = document.createElement("p");
     let phoneNumber = document.createElement("p");
@@ -29,7 +29,7 @@ const displayMembers = (data) => {
     web.setAttribute("href", `${element.company_website}`);
     logo.setAttribute("src", `${element.image_file}`);
     logo.setAttribute("loading", "lazy");
-    logo.setAttribute("width", "250");
+    logo.setAttribute("width", "300");
     logo.setAttribute("height", "auto");
 
     card.appendChild(logo);

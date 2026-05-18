@@ -5,6 +5,8 @@
 
   .header-menu {
     grid-template-columns: 40px auto;
+    gap: 1rem;
+    padding: 1rem 0;
   }
 
   .header-menu span {
@@ -16,19 +18,31 @@
   }
 
   .navigation {
-    display: inline;
-    grid-column: 2/3;
-    flex-direction: row;
-  }
-
-  .navigation ul {
     display: flex;
-    justify-content: flex-end;
+    grid-column: 3/4;
   }
 
-  .navigation li {
-    flex: 1 1 100%;
+  .header-menu .navigation ul {
+    display: flex;
+    border: none;
   }
+
+  .header-menu .navigation li {
+    flex: 1 1 100%;
+    border: none;
+  }
+
+  .navigation a {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+  }
+
+  .navigation a:hover {
+    background-color: var(--secondary-color);
+  }
+
+  /********* MAIN *********/
 
   .list {
     display: flex;
@@ -43,18 +57,45 @@
       & > * {
         margin: 0.1rem;
       }
-    }
 
-    img {
-      display: none;
-    }
+      img {
+        display: none;
+      }
 
-    .company_name {
-      display: inline;
-    }
+      .company_name {
+        display: block;
+      }
 
-    &:nth-child(even) {
-      background-color: #edd7f7;
+      h3 {
+        font-size: 1rem;
+      }
+
+      &:nth-child(even) {
+        background-color: #edd7f7;
+      }
     }
+  }
+
+  /********* FOOTER *********/
+
+  footer {
+    display: grid;
+    padding: 1rem 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer .address {
+    grid-column: 1/2;
+    justify-self: center;
+  }
+
+  footer .social-media {
+    justify-self: center;
+    grid-column: 2/3;
+  }
+
+  footer .student-info {
+    grid-column: 3/3;
+    justify-self: center;
   }
 }
