@@ -4,7 +4,7 @@
     "company_address": "Republica Argentina 1678",
     "phone_number": 28484848,
     "company_website": "https://tienda.farmashop.com.uy/",
-    "image_file": "https://media.licdn.com/dms/image/v2/D4D0BAQGKUVyItdJT0w/company-logo_200_200/company-logo_200_200/0/1710441497733/farmashop_logo?e=1780531200&v=beta&t=kPJr19JrESnjmbkRimbCHpw_g9ITt231meBK4LyBFXM",
+    "image_file": "https://tiendacdn.farmashop.com.uy/media/wysiwyg/Micrositio_Empresaa_2023_Header_Desktop.jpg",
     "membership_level": "3"
   },
   {
@@ -32,11 +32,11 @@
     "membership_level": "2"
   },
   {
-    "company_name": "El Bar",
-    "company_address": "Luis A. de Herrera 955",
-    "phone_number": 98057858,
-    "company_website": "https://elbarpaysandu.com/",
-    "image_file": "https://elbarpaysandu.com/wp-content/uploads/2023/09/ELBAR_logo.png",
+    "company_name": "Subway",
+    "company_address": "Bv. Artigas 770",
+    "phone_number": 47244124,
+    "company_website": "https://subway.com.uy/",
+    "image_file": "https://subway.com.uy/wp-content/uploads/2023/10/Subway.logo_.8.5.svg-1024x204.png",
     "membership_level": "1"
   },
   {

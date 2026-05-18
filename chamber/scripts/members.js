@@ -32,6 +32,7 @@ const displayMembers = (data) => {
     logo.setAttribute("loading", "lazy");
     logo.setAttribute("width", "250");
     logo.setAttribute("height", "auto");
+    logo.setAttribute("alt", `${element.company_name} logo`);
 
     card.appendChild(logo);
     card.appendChild(memberName);
