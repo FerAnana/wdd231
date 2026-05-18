@@ -55,7 +55,7 @@ footer {
   grid-column: 3/4;
   font-size: 2rem;
   border: none;
-  background-color: none;
+  background-color: transparent;
 }
 
 .hamburger::before {
@@ -119,19 +119,19 @@ h1 {
 
 .grid-list {
   text-align: center;
+}
 
-  button {
-    margin: 0 0.3rem;
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-    background-color: white;
-    width: 60px;
-    height: 50px;
-  }
+.grid-list button {
+  margin: 0 0.3rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: white;
+  width: 60px;
+  height: 50px;
+}
 
-  button:hover {
-    background-color: var(--secondary-accent);
-  }
+.grid-list button:hover {
+  background-color: var(--secondary-accent);
 }
 
 #members {
@@ -141,16 +141,15 @@ h1 {
 section {
   border: 1px solid rgb(0 0 0 / 10%);
   padding: 0.5rem;
+}
+section a {
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  color: navy;
+}
 
-  a {
-    font-family: Arial, sans-serif;
-    font-size: 0.85rem;
-    color: navy;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
+section h3 {
+  font-size: 1rem;
 }
 
 .grid {
@@ -158,49 +157,43 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   align-items: center;
-
-  section {
-    text-align: center;
-    box-shadow: 0 10px 10px #a0a0a0;
-    margin: 0.5rem;
-    & > * {
-      margin: 0.1rem;
-    }
-
-    h3 {
-      display: none;
-    }
-  }
-
-  img {
-    margin: 0.5rem auto;
-    width: auto;
-    max-width: 90%;
-    height: 75px;
-  }
 }
 
-.list {
-  section {
-    & > * {
-      margin: 0.2rem;
-    }
-
-    &:nth-child(even) {
-      background-color: #b300ff28;
-    }
-  }
-
-  .img-list-view {
-    display: none;
-    & > * {
-      margin: 0.5rem;
-    }
-  }
+.grid section {
+  text-align: center;
+  box-shadow: 0 10px 10px #a0a0a0;
+  margin: 0.5rem;
 }
 
-h3 {
-  font-size: 1.2rem;
+.grid section > * {
+  margin: 0.1rem;
+}
+
+.grid section h3 {
+  display: none;
+}
+
+.grid section img {
+  margin: 0.5rem auto;
+  width: auto;
+  max-width: 90%;
+  height: 75px;
+}
+
+.list section > * {
+  margin: 0.2rem;
+}
+
+.list section:nth-child(even) {
+  background-color: #b300ff28;
+}
+
+.list section .img-list-view {
+  display: none;
+}
+
+.list section .img-list-view > * {
+  margin: 0.5rem;
 }
 
 /********* FOOTER *********/

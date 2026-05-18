@@ -46,30 +46,25 @@
   .list {
     display: flex;
     flex-direction: column;
+  }
+  .list section {
+    display: grid;
+    border: none;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.5rem;
+  }
 
-    section {
-      display: grid;
-      border: none;
-      grid-template-columns: 2fr 1fr 1fr;
-      margin: 0;
-      padding: 0.5rem;
+  .list section > * {
+    margin: 0 1rem;
+  }
 
-      & > * {
-        margin: 0 1rem;
-      }
+  .list section img {
+    display: none;
+  }
 
-      img {
-        display: none;
-      }
-
-      h3 {
-        font-size: 1rem;
-      }
-
-      &:nth-child(even) {
-        background-color: #b300ff28;
-      }
-    }
+  .list section:nth-child(even) {
+    background-color: #b300ff28;
   }
 
   /********* FOOTER *********/
