@@ -57,16 +57,16 @@ function spotlightMembers(data) {
   const spotlightSelection = shuffled.slice(0, 3);
 
   spotlightSelection.forEach((element) => {
-    let article = document.createElement("article");
-    let businessName = document.createElement("h3");
-    let businessLogo = document.createElement("img");
-    let businessEmail = document.createElement("p");
-    let businessPhone = document.createElement("p");
-    let businessUrlP = document.createElement("p");
-    let businessUrl = document.createElement("a");
+    const section = document.createElement("section");
+    const businessName = document.createElement("h3");
+    const businessLogo = document.createElement("img");
+    const businessEmail = document.createElement("p");
+    const businessPhone = document.createElement("p");
+    const businessUrlP = document.createElement("p");
+    const businessUrl = document.createElement("a");
 
     businessName.textContent = element.company_name;
-    businessPhone.textContent = `Phone: ${element.phone_number}`;
+    businessPhone.textContent = `Teléfono: ${element.phone_number}`;
     businessUrlP.textContent = "URL: ";
     businessUrl.textContent = element.company_website;
     businessUrl.setAttribute("href", `${element.company_website}`);
@@ -77,13 +77,13 @@ function spotlightMembers(data) {
     businessLogo.setAttribute("loading", "lazy");
 
     businessUrlP.appendChild(businessUrl);
-    article.appendChild(businessName);
-    article.appendChild(businessLogo);
-    article.appendChild(businessPhone);
-    article.appendChild(businessUrlP);
+    section.appendChild(businessName);
+    section.appendChild(businessLogo);
+    section.appendChild(businessPhone);
+    section.appendChild(businessUrlP);
 
-    article.setAttribute("class", "business-spotlight");
+    section.setAttribute("class", "business-spotlight");
 
-    document.querySelector("#spotlights").appendChild(article);
+    document.querySelector("#spotlights").appendChild(section);
   });
 }
