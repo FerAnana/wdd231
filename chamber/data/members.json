@@ -5,7 +5,7 @@
     "phone_number": 28484848,
     "company_website": "https://tienda.farmashop.com.uy/",
     "image_file": "https://tiendacdn.farmashop.com.uy/media/wysiwyg/Micrositio_Empresaa_2023_Header_Desktop.jpg",
-    "membership_level": "3"
+    "membership_level": 3
   },
   {
     "company_name": "Office 2000",
@@ -13,7 +13,7 @@
     "phone_number": 19180,
     "company_website": "https://office2000.com.uy/",
     "image_file": "https://office2000.com.uy/cache/office%202000/logo/Office2000_logo-400x137fill.png",
-    "membership_level": "3"
+    "membership_level": 3
   },
   {
     "company_name": "La Popular",
@@ -21,7 +21,7 @@
     "phone_number": 47228682,
     "company_website": "https://lapopular.uy/",
     "image_file": "https://lapopular.uy/wp-content/uploads/2023/06/logo-la-popular-rojo.svg",
-    "membership_level": "1"
+    "membership_level": 1
   },
   {
     "company_name": "Mac Center Shopping Urbano",
@@ -29,7 +29,7 @@
     "phone_number": 47229911,
     "company_website": "https://maccentershopping.com.uy/",
     "image_file": "https://maccentershopping.com.uy/assets/logo_mcs.png",
-    "membership_level": "2"
+    "membership_level": 2
   },
   {
     "company_name": "Subway",
@@ -37,7 +37,7 @@
     "phone_number": 47244124,
     "company_website": "https://subway.com.uy/",
     "image_file": "https://subway.com.uy/wp-content/uploads/2023/10/Subway.logo_.8.5.svg-1024x204.png",
-    "membership_level": "1"
+    "membership_level": 1
   },
   {
     "company_name": "El Dorado",
@@ -45,7 +45,7 @@
     "phone_number": 99801990,
     "company_website": "https://www.eldorado.com.uy/",
     "image_file": "https://eldoradouy.vtexassets.com/assets/vtex/assets-builder/eldoradouy.fizzmod-theme/5.0.1/img/logo2___c2f2226cd2891ec61ee83af2b91163cd.svg",
-    "membership_level": "1"
+    "membership_level": 1
   },
   {
     "company_name": "Indian",
@@ -53,6 +53,6 @@
     "phone_number": 24009236,
     "company_website": "https://www.indian.com.uy/",
     "image_file": "https://f.fcdn.app/assets/commerce/www.indian.com.uy/11d6_3bb6/public/web/img/logo.svg",
-    "membership_level": "1"
+    "membership_level": 1
   }
 ]

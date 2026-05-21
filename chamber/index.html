@@ -34,7 +34,7 @@
     <script src="scripts/responsive-menu.mjs" defer></script>
     <script src="scripts/dates.mjs" defer></script>
     <script type="module" src="scripts/modules.mjs"></script>
-    <title>Directory - Paysandú Chamber of Commerce</title>
+    <title>Home - Paysandú Chamber of Commerce</title>
   </head>
   <body>
     <header>
@@ -50,8 +50,12 @@
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
         <nav id="nav-bar" class="navigation">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#" class="current">Directory</a></li>
+            <li><a href="#" class="current">Home</a></li>
+            <li>
+              <a href="https://feranana.github.io/wdd231/chamber/directory.html"
+                >Directory</a
+              >
+            </li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
           </ul>
@@ -59,33 +63,37 @@
       </div>
     </header>
     <main>
-      <h1>Directory</h1>
-      <div class="grid-list">
-        <button id="grid" aria-label="Grid view">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="#aa4465">
-            <rect x="2" y="2" width="5" height="5" rx="1" />
-            <rect x="9.5" y="2" width="5" height="5" rx="1" />
-            <rect x="17" y="2" width="5" height="5" rx="1" />
-            <rect x="2" y="9.5" width="5" height="5" rx="1" />
-            <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
-            <rect x="17" y="9.5" width="5" height="5" rx="1" />
-            <rect x="2" y="17" width="5" height="5" rx="1" />
-            <rect x="9.5" y="17" width="5" height="5" rx="1" />
-            <rect x="17" y="17" width="5" height="5" rx="1" />
-          </svg>
-        </button>
-        <button id="list" aria-label="List view">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="#aa4465">
-            <rect x="2" y="3.5" width="4" height="4" rx="1" />
-            <rect x="9" y="4.5" width="13" height="2" rx="1" />
-            <rect x="2" y="10" width="4" height="4" rx="1" />
-            <rect x="9" y="11" width="13" height="2" rx="1" />
-            <rect x="2" y="16.5" width="4" height="4" rx="1" />
-            <rect x="9" y="17.5" width="13" height="2" rx="1" />
-          </svg>
-        </button>
+      <section class="hero">
+        <picture class="hero-picture">
+          <source srcset="placeholder" media="(min-width: 1000px)" />
+          <source srcset="placeholder" media="(min-width: 500px)" />
+          <img src="placeholder" alt="Paysandú landscape" class="hero-img" />
+        </picture>
+        <div class="hero-contet">
+          <button class="call-to-aaction">Join!</button>
+        </div>
+      </section>
+      <h1>Home</h1>
+      <section class="current-events">
+        <h2>Events</h2>
+      </section>
+      <div class="weather">
+        <section class="current-weather">
+          <h2>Current weather</h2>
+          <p>
+            The current temperature in Paysandú is
+            <span id="current-temp"></span>
+          </p>
+          <figure>
+            <img class="" src="" alt="" />
+            <figcaption></figcaption>
+          </figure>
+        </section>
+        <section class="weather-forecast">
+          <h2>Weather forecast</h2>
+        </section>
       </div>
-      <article id="members" class="grid"></article>
+      <section id="spotlights" class="spotlights"></section>
     </main>
     <footer>
       <div class="address">
