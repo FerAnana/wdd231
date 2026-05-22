@@ -60,12 +60,13 @@ function spotlightMembers(data) {
     const section = document.createElement("section");
     const businessName = document.createElement("h3");
     const businessLogo = document.createElement("img");
-    const businessEmail = document.createElement("p");
+    const businessAddress = document.createElement("p");
     const businessPhone = document.createElement("p");
     const businessUrlP = document.createElement("p");
     const businessUrl = document.createElement("a");
 
     businessName.textContent = element.company_name;
+    businessAddress.textContent = element.company_address;
     businessPhone.textContent = `Teléfono: ${element.phone_number}`;
     businessUrlP.textContent = "URL: ";
     businessUrl.textContent = element.company_website;
@@ -79,6 +80,7 @@ function spotlightMembers(data) {
     businessUrlP.appendChild(businessUrl);
     section.appendChild(businessName);
     section.appendChild(businessLogo);
+    section.appendChild(businessAddress);
     section.appendChild(businessPhone);
     section.appendChild(businessUrlP);
 

@@ -1,8 +1,6 @@
-export async function getWeather() {
-  const url =
-    "https://api.openweathermap.org/data/2.5/weather?lat=-32.32&lon=-58.09&units=metric&appid=e02b26007dfe6fec2c51e08fbb8a7e26&lang=sp";
+export async function getWeather(weatherUrl) {
   try {
-    let response = await fetch(url);
+    let response = await fetch(weatherUrl);
     if (response.ok) {
       let data = await response.json();
       currentTemp(data);
@@ -20,7 +18,7 @@ export async function getForecast(forecastUrl) {
     let response = await fetch(forecastUrl);
     if (response.ok) {
       let data = await response.json();
-      // function to display the DOM
+      displayForecast(data);
     } else {
       const errorText = await response.text();
       throw new Error(`Server returned error: ${errorText}`);
@@ -42,8 +40,8 @@ function currentTemp(data) {
 
   const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
 
-  const sunsetSunriseTime = (timestamp, timezoneOffset) => {
-    const localDate = new Date((timestamp + timezoneOffset) * 1000);
+  const sunsetSunriseTime = (timestamp) => {
+    const localDate = new Date((timestamp + -10800) * 1000);
 
     const hours = localDate.getUTCHours();
     const minutes = String(localDate.getUTCMinutes()).padStart(2, "0");
@@ -51,13 +49,15 @@ function currentTemp(data) {
     return `${hours}:${minutes}`;
   };
 
-  celsius.textContent = `${data.main.temp}°`;
-  description.textContent = data.weather[0].description;
-  highTemp.textContent = `Máxima: ${data.main.temp_max}°`;
-  lowTemp.textContent = `Mínima: ${data.main.temp_min}°`;
+  celsius.textContent = `${Math.floor(data.main.temp)}°C`;
+  description.textContent =
+    data.weather[0].description.charAt(0).toUpperCase() +
+    data.weather[0].description.slice(1).toLowerCase();
+  highTemp.textContent = `Máxima: ${Math.floor(data.main.temp_max)}°C`;
+  lowTemp.textContent = `Mínima: ${Math.floor(data.main.temp_min)}°C`;
   humidity.textContent = `Humedad: ${data.main.humidity}%`;
-  sunrise.textContent = `Amanecer: ${sunsetSunriseTime(data.sys.sunrise, data.timezone)}`;
-  sunset.textContent = `Atardecer: ${sunsetSunriseTime(data.sys.sunset, data.timezone)}`;
+  sunrise.textContent = `Amanecer: ${sunsetSunriseTime(data.sys.sunrise)}`;
+  sunset.textContent = `Atardecer: ${sunsetSunriseTime(data.sys.sunset)}`;
   weatherIcon.setAttribute("src", icon);
   weatherIcon.setAttribute("loading", "lazy");
 
@@ -69,4 +69,34 @@ function currentTemp(data) {
   document.querySelector("#current-weather").appendChild(humidity);
   document.querySelector("#current-weather").appendChild(sunrise);
   document.querySelector("#current-weather").appendChild(sunset);
+}
+
+function displayForecast(data) {
+  let todayForecast = document.createElement("p");
+  let tomorrowForecast = document.createElement("p");
+  let afterTomorrow = document.createElement("p");
+
+  const dayOfTheWeek = (timestamp) => {
+    const localDate = new Date((timestamp + -10800) * 1000);
+
+    const days = [
+      "Domingo",
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes",
+      "Sábado",
+    ];
+
+    return days[localDate.getUTCDay()];
+  };
+
+  todayForecast.textContent = `Hoy: ${Math.floor(data.list[0].main.temp)}°C`;
+  tomorrowForecast.textContent = `${dayOfTheWeek(data.list[8].dt)}: ${Math.floor(data.list[8].main.temp)}°C`;
+  afterTomorrow.textContent = `${dayOfTheWeek(data.list[16].dt)}: ${Math.floor(data.list[16].main.temp)}°C`;
+
+  document.querySelector("#weather-forecast").appendChild(todayForecast);
+  document.querySelector("#weather-forecast").appendChild(tomorrowForecast);
+  document.querySelector("#weather-forecast").appendChild(afterTomorrow);
 }
