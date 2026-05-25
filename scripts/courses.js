@@ -85,19 +85,55 @@ function createCourseButton(allCourses) {
   let credits = 0;
   let span = document.createElement("span");
   allCourses.forEach((course) => {
-    let button = document.createElement("button");
+    let courseButton = document.createElement("button");
 
-    button.textContent = `${course.subject} ${course.number}`;
+    courseButton.textContent = `${course.subject} ${course.number}`;
     if (course.completed === true) {
-      button.setAttribute("class", "completed-course");
+      courseButton.setAttribute("class", "completed-course");
     }
     credits += course.credits;
 
-    document.querySelector(".courses").appendChild(button);
-    button.addEventListener("click", () => {
-      alert(course.description);
+    document.querySelector(".courses").appendChild(courseButton);
+    courseButton.addEventListener("click", () => {
+      displayModal(course);
     });
   });
   span.innerHTML = `<span>The total credits for course listed above is ${credits}</span>`;
   document.querySelector(".courses").appendChild(span);
+}
+
+function displayModal(course) {
+  const modal = document.querySelector("#course-details");
+  modal.innerHTML = "";
+
+  let courseSubject = document.createElement("h3");
+  let closeModal = document.createElement("button");
+  let courseCredits = document.createElement("p");
+  let courseTitle = document.createElement("p");
+  let courseCertificate = document.createElement("p");
+  let courseDescription = document.createElement("p");
+  let courseTechnology = document.createElement("p");
+
+  courseSubject.textContent = `${course.subject} ${course.number}`;
+  closeModal.textContent = "❌";
+  courseCredits.textContent = `${course.credits} credits`;
+  courseTitle.textContent = `${course.title}`;
+  courseTitle.setAttribute("class", "course-title");
+  courseCertificate.textContent = `Certificate: ${course.certificate}`;
+  courseDescription.textContent = `${course.description}`;
+  courseTechnology.textContent = `Technology: ${course.technology.join(", ")}`;
+
+  modal.appendChild(courseSubject);
+  modal.appendChild(closeModal);
+  modal.appendChild(courseTitle);
+  modal.appendChild(courseCredits);
+  modal.appendChild(courseCertificate);
+  modal.appendChild(courseDescription);
+  modal.appendChild(courseTechnology);
+
+  modal.showModal();
+
+  closeModal.addEventListener("click", () => {
+    modal.close();
+  });
 }

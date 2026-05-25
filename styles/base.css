@@ -21,7 +21,7 @@ footer {
 }
 
 main {
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 /*************** HEADER ***************/
@@ -149,7 +149,7 @@ section h2 {
 
 .about-me p {
   line-height: 1.35;
-  padding: 0 1rem .5rem 1rem;
+  padding: 0 1rem 0.5rem 1rem;
 }
 
 .first-p {
@@ -227,6 +227,43 @@ section h2 {
   content: "✔ ";
 }
 
+.course-details {
+  border: none;
+  border-radius: 5px;
+  margin: auto;
+  width: 500px;
+  height: fit-content;
+}
+
+.course-details h3 {
+  padding: .8rem;
+  text-align: center;
+  font-family: var(--heading-font);
+  background-color: var(--primary-accent);
+  color: white;
+}
+
+.course-details button {
+  position: absolute;
+  top: 1.7rem;
+  right: 1.7rem;
+}
+
+.course-title {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: .5rem;
+}
+
+.course-details p {
+  margin: 1rem 0;
+}
+
+.course-details::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /*************** FOOTER ***************/
 footer {
   background-color: var(--primary-color);
@@ -240,7 +277,7 @@ footer p {
 
 .social-media {
   display: flex;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   background-color: white;
   flex-direction: row;
   gap: 1rem;

@@ -29,6 +29,7 @@ export async function getForecast(forecastUrl) {
 }
 
 function currentTemp(data) {
+  let div = document.createElement("div")
   let celsius = document.createElement("p");
   let description = document.createElement("p");
   let highTemp = document.createElement("p");
@@ -60,15 +61,17 @@ function currentTemp(data) {
   sunset.textContent = `Atardecer: ${sunsetSunriseTime(data.sys.sunset)}`;
   weatherIcon.setAttribute("src", icon);
   weatherIcon.setAttribute("loading", "lazy");
+  div.setAttribute("class", "data")
 
-  document.querySelector("#current-weather").appendChild(weatherIcon);
-  document.querySelector("#current-weather").appendChild(celsius);
-  document.querySelector("#current-weather").appendChild(description);
-  document.querySelector("#current-weather").appendChild(highTemp);
-  document.querySelector("#current-weather").appendChild(lowTemp);
-  document.querySelector("#current-weather").appendChild(humidity);
-  document.querySelector("#current-weather").appendChild(sunrise);
-  document.querySelector("#current-weather").appendChild(sunset);
+  div.appendChild(weatherIcon);
+  div.appendChild(celsius);
+  div.appendChild(description);
+  div.appendChild(highTemp);
+  div.appendChild(lowTemp);
+  div.appendChild(humidity);
+  div.appendChild(sunrise);
+  div.appendChild(sunset);
+  document.querySelector("#current-weather").appendChild(div);
 }
 
 function displayForecast(data) {
