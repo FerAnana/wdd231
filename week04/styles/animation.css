@@ -1,0 +1,72 @@
+/*********** ANIMATIONS ***********/
+
+/* "keyframes" are needed everytime that I will use animations in my document */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, 50%) sclae(1.25);
+  }
+}
+
+#loading {
+  margin: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border: 5px solid transparent;
+  border-color: #999 transparent;
+  border-radius: 50%;
+  /* When I have created the keyframes, I need to put them in a css rule with the "animation" declaration*/
+  animation: spin 1.5s linear infinite;
+  box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+}
+
+#loading::after {
+  content: "⚙";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/*********** TRANSITIONS ***********/
+
+#loading-2 {
+  margin: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border: 5px solid transparent;
+  border-color: #999 transparent;
+  border-radius: 50%;
+  /* Transitions, contrary to animations, doesn't need a keyframe to work */
+  transition: transform 1.5s linear;
+}
+
+#loading-2::after {
+  content: "⚙";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 1.5s ease-in-out;
+  font-size: 2rem;
+}
+
+#loading-2:hover {
+  transform: rotate(360deg);
+}
+
+#loading-2:hover::after {
+  transform: translate(-50%, -50%) scale(1.5);
+}
