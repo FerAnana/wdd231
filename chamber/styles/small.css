@@ -113,7 +113,9 @@ main {
   margin: 0 1.5rem;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: var(--heading-font);
 }
 
@@ -195,6 +197,101 @@ section h3 {
 
 .list section .img-list-view > * {
   margin: 0.5rem;
+}
+
+.form-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.form-card-container h2 {
+  text-align: center;
+}
+
+form {
+  margin: 1rem 2%;
+  padding: 0 1rem;
+  width: fit-content;
+  height: fit-content;
+  justify-self: center;
+
+  label {
+    display: block;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+    margin: 1.5rem 0 0.2rem 0;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="email"],
+  textarea,
+  select {
+    display: block;
+    margin: 0.1rem 0 1rem 0;
+    padding: 0.3rem;
+    border-left-width: 5px;
+    border: 1px solid #999;
+    border-left-color: #999;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  input:required {
+    border-left-width: 4px;
+    border-left-color: rgb(202, 6, 6);
+  }
+
+  input:required:valid {
+    border-left-width: 4px;
+    border-left-color: rgb(41, 168, 16);
+  }
+
+  input[type="submit"] {
+    margin: 1rem auto;
+    width: 150px;
+    display: block;
+    text-align: center;
+    background-color: var(--secondary-accent);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 2 0;
+    font-size: 1rem;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #ebb9b4;
+  }
+}
+
+.membership-levels section {
+  margin: 2rem auto;
+  background-color: var(--secondary-accent);
+  border: solid 1px black;
+  border-radius: 20px 0;
+}
+
+.membership-levels h3 {
+  text-align: center;
+  margin: 0.7rem 3rem;
+}
+
+.membership-levels button {
+  background-color: var(--primary-accent);
+  border-radius: 5px;
+  padding: 0.2rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.membership-levels button:hover {
+  background-color: #c9e6df;
 }
 
 /********* FOOTER *********/
