@@ -284,6 +284,7 @@ form {
 
 .membership-levels button {
   background-color: var(--primary-accent);
+  font-size: .8rem;
   border-radius: 5px;
   padding: 0.2rem;
   display: block;
@@ -292,6 +293,90 @@ form {
 
 .membership-levels button:hover {
   background-color: #c9e6df;
+}
+
+.non-profit {
+  animation: fadeNonProfit 1.5s ease-out backwards;
+  animation-delay: 0.1s;
+}
+
+.bronze {
+  animation: fadeBronze 1.5s ease-out backwards;
+  animation-delay: 0.1s;
+}
+
+.silver {
+  animation: fadeSilver 1.5s ease-out backwards;
+  animation-delay: 0.1s;
+}
+
+.gold {
+  animation: fadeGold 1.5s ease-out backwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes fadeNonProfit {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    background-color: #c8ccd1;
+  }
+  50% {
+    background-color: #c2c6ca;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #ffc9c4;
+  }
+}
+
+@keyframes fadeBronze {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    background-color: #ce8c4e;
+  }
+  50% {
+    background-color: #ffc598;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #ffc9c4;
+  }
+}
+
+@keyframes fadeSilver {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    background-color: #b0c4de;
+  }
+  50% {
+    background-color: #d0e1fd;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #ffc9c4;
+  }
+}
+
+@keyframes fadeGold {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    background-color: #fefce8;
+  }
+  50% {
+    background-color: #fef08a;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #ffc9c4;
+  }
 }
 
 /********* FOOTER *********/
