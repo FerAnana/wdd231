@@ -1,23 +1,11 @@
-export async function getMembersData(url) {
+export async function getData(url) {
   const response = await fetch(url);
   const data = await response.json();
-  if (document.querySelector("#members")) {
-    document.querySelector("#grid").addEventListener("click", () => {
-      document.querySelector("#members").classList.add("grid");
-      document.querySelector("#members").classList.remove("list");
-    });
-
-    document.querySelector("#list").addEventListener("click", () => {
-      document.querySelector("#members").classList.add("list");
-      document.querySelector("#members").classList.remove("grid");
-    });
-    displayMembers(data);
-  } else if (document.querySelector("#spotlights")) {
-    spotlightMembers(data);
-  }
+  return data;
 }
 
-function displayMembers(data) {
+export function displayMembers(data) {
+  if (!document.querySelector("#members")) return;
   data.forEach((element) => {
     let card = document.createElement("section");
     let memberName = document.createElement("h3");
@@ -47,14 +35,28 @@ function displayMembers(data) {
 
     document.querySelector("#members").appendChild(card);
   });
+  if (document.querySelector("#members")) {
+    document.querySelector("#grid").addEventListener("click", () => {
+      document.querySelector("#members").classList.add("grid");
+      document.querySelector("#members").classList.remove("list");
+    });
+    document.querySelector("#list").addEventListener("click", () => {
+      document.querySelector("#members").classList.add("list");
+      document.querySelector("#members").classList.remove("grid");
+    });
+  }
 }
 
-function spotlightMembers(data) {
+export function spotlightMembers(data) {
+  if (!document.querySelector("#spotlights")) return;
+  const container = document.querySelector("#spotlights");
   const eligibleMembers = data.filter(
     (element) => element.membership_level > 1,
   );
   const shuffled = eligibleMembers.sort(() => 0.5 - Math.random());
   const spotlightSelection = shuffled.slice(0, 3);
+
+  container.innerHTML = "";
 
   spotlightSelection.forEach((element) => {
     const section = document.createElement("section");
@@ -73,7 +75,7 @@ function spotlightMembers(data) {
     businessUrl.setAttribute("href", `${element.company_website}`);
     businessUrl.setAttribute("target", "_blank");
     businessLogo.setAttribute("src", `${element.image_file}`);
-    businessLogo.setAttribute("width", "250px");
+    businessLogo.setAttribute("width", "250");
     businessLogo.setAttribute("height", "auto");
     businessLogo.setAttribute("loading", "lazy");
 
@@ -87,5 +89,44 @@ function spotlightMembers(data) {
     section.setAttribute("class", "business-spotlight");
 
     document.querySelector("#spotlights").appendChild(section);
+  });
+}
+
+export function displayMembersLevels(data) {
+  const modal = document.querySelector("#member-modal");
+
+  data.forEach((element) => {
+    let container = document.createElement("section");
+    let containerHeader = document.createElement("h3");
+    let modalButton = document.createElement("button");
+
+    container.setAttribute("class", element.level);
+    containerHeader.textContent = element.name;
+    modalButton.textContent = "¡Aprender más!";
+
+    container.appendChild(containerHeader);
+    container.appendChild(modalButton);
+
+    document.querySelector(".flex-levels").appendChild(container);
+    modalButton.addEventListener("click", () => {
+      modal.innerHTML = "";
+      let level = document.createElement("h3");
+      let benefits = document.createElement("p");
+      let closeModal = document.createElement("button");
+
+      level.textContent = element.name;
+      benefits.textContent = element.benefits.join(". ");
+      closeModal.textContent = "❌";
+
+      modal.appendChild(level);
+      modal.appendChild(closeModal);
+      modal.appendChild(benefits);
+
+      modal.showModal();
+
+      closeModal.addEventListener("click", () => {
+        modal.close();
+      });
+    });
   });
 }

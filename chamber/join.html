@@ -29,7 +29,7 @@
     <script src="scripts/responsive-menu.mjs" defer></script>
     <script src="scripts/dates.mjs" defer></script>
     <script type="module" src="scripts/modules.mjs"></script>
-    <title>Únete - Paysandú Chamber of Commerce</title>
+    <title>Join - Paysandú Chamber of Commerce</title>
   </head>
   <body>
     <header>
@@ -85,7 +85,8 @@
             name="organizational-title"
             required
             title="Tu título en la empresa"
-            autocomplete="organization-title"></input>
+            autocomplete="organization-title"
+            pattern=""></input>
           <label for="email">Email</label>
           <input
             type="email"
@@ -116,10 +117,10 @@
           <label for="membership-level">Nivel de membresía</label>
           <select name="membership-level" id="membership-level" required>
             <option value="">Seleccionar...</option>
-            <option value="Sin fines de lucro">SF (Sin fines de lucro)</option>
-            <option value="Bronce">Bronce</option>
-            <option value="Plata">Plata</option>
-            <option value="Oro">Oro</option>
+            <option value="np">SF (Sin fines de lucro)</option>
+            <option value="bronze">Bronce</option>
+            <option value="silver">Plata</option>
+            <option value="gold">Oro</option>
           </select>
           <label for="business-description">Descripción de la empresa/organización</label>
           <textarea
@@ -133,27 +134,10 @@
         </form>
         <div class="membership-levels">
           <h2 class="levels-title">Niveles de membresía</h2>
-          <div class="flex-levels">  
-            <section class="non-profit">
-              <h3>Nivel Sin Fines de Lucro</h3>
-              <button>Aprender más</button>
-            </section>
-            <section class="bronze">
-              <h3>Nivel Bronce</h3>
-              <button>Aprender más</button>
-            </section>
-            <section class="silver">
-              <h3>Nivel Plata</h3>
-              <button>Aprender más</button>
-            </section>
-            <section class="gold">
-              <h3>Nivel Oro</h3>
-              <button>Aprender más</button>
-            </section>
-          </div>
+          <div class="flex-levels"></div>
         </div>
       </div>
-      <dialog class="member-modal"></dialog>
+      <dialog id="member-modal"></dialog>
     </main>
     <footer>
       <div class="address">
