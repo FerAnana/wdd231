@@ -79,6 +79,10 @@
   .levels-title, .membership-levels {
     grid-column: 2/3;
   }
+
+  .member-modal {
+    width: 500px;
+  }
   /********* FOOTER *********/
 
   footer {

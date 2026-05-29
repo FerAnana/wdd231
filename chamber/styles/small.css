@@ -215,59 +215,58 @@ form {
   width: fit-content;
   height: fit-content;
   justify-self: center;
+}
+form label {
+  display: block;
+  font-size: 0.8rem;
+  padding-top: 0.2rem;
+}
 
-  label {
-    display: block;
-    font-size: 0.8rem;
-    padding-top: 0.2rem;
-  }
+form h3 {
+  font-size: 0.9rem;
+  margin: 1.5rem 0 0.2rem 0;
+}
 
-  h3 {
-    font-size: 0.9rem;
-    margin: 1.5rem 0 0.2rem 0;
-  }
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="email"],
+form textarea,
+form select {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  padding: 0.3rem;
+  border-left-width: 5px;
+  border: 1px solid #999;
+  border-left-color: #999;
+  border-radius: 4px;
+  font-size: 1rem;
+}
 
-  input[type="text"],
-  input[type="tel"],
-  input[type="date"],
-  input[type="email"],
-  textarea,
-  select {
-    display: block;
-    margin: 0.1rem 0 1rem 0;
-    padding: 0.3rem;
-    border-left-width: 5px;
-    border: 1px solid #999;
-    border-left-color: #999;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
+form input:required {
+  border-left-width: 4px;
+  border-left-color: rgb(202, 6, 6);
+}
 
-  input:required {
-    border-left-width: 4px;
-    border-left-color: rgb(202, 6, 6);
-  }
+form input:required:valid {
+  border-left-width: 4px;
+  border-left-color: rgb(41, 168, 16);
+}
 
-  input:required:valid {
-    border-left-width: 4px;
-    border-left-color: rgb(41, 168, 16);
-  }
+form input[type="submit"] {
+  margin: 1rem auto;
+  width: 150px;
+  display: block;
+  text-align: center;
+  background-color: var(--secondary-accent);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 2 0;
+  font-size: 1rem;
+}
 
-  input[type="submit"] {
-    margin: 1rem auto;
-    width: 150px;
-    display: block;
-    text-align: center;
-    background-color: var(--secondary-accent);
-    border-radius: 1rem;
-    padding: 0.5rem 1rem;
-    margin: 2 0;
-    font-size: 1rem;
-  }
-
-  input[type="submit"]:hover {
-    background-color: #ebb9b4;
-  }
+form input[type="submit"]:hover {
+  background-color: #ebb9b4;
 }
 
 .membership-levels section {
@@ -383,7 +382,7 @@ form {
   border: 1px solid black;
   border-radius: 5px;
   margin: auto;
-  width: 500px;
+  width: 325px;
   height: fit-content;
 }
 
@@ -401,19 +400,17 @@ form {
   right: 1.7rem;
 }
 
-.course-title {
-  font-family: var(--heading-font);
-  font-weight: bold;
-  font-size: 1.3rem;
-  margin-top: 0.5rem;
-}
-
 .member-modal ul {
   margin: 1rem 0;
+  padding: 0 1rem;
 }
 
 .member-modal p {
   text-align: center;
+}
+
+.member-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /********* FOOTER *********/
