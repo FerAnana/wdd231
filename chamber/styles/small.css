@@ -284,7 +284,7 @@ form {
 
 .membership-levels button {
   background-color: var(--primary-accent);
-  font-size: .8rem;
+  font-size: 0.8rem;
   border-radius: 5px;
   padding: 0.2rem;
   display: block;
@@ -377,6 +377,43 @@ form {
     transform: translateY(0);
     background-color: #ffc9c4;
   }
+}
+
+.member-modal {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  width: 500px;
+  height: fit-content;
+}
+
+.member-modal h3 {
+  padding: 0.8rem;
+  text-align: center;
+  font-family: var(--heading-font);
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.member-modal button {
+  position: absolute;
+  top: 1.7rem;
+  right: 1.7rem;
+}
+
+.course-title {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.member-modal ul {
+  margin: 1rem 0;
+}
+
+.member-modal p {
+  text-align: center;
 }
 
 /********* FOOTER *********/

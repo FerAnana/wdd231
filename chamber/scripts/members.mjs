@@ -111,16 +111,25 @@ export function displayMembersLevels(data) {
     modalButton.addEventListener("click", () => {
       modal.innerHTML = "";
       let level = document.createElement("h3");
-      let benefits = document.createElement("p");
+      let benefitsList = document.createElement("ul");
       let closeModal = document.createElement("button");
+      let price = document.createElement("p");
 
       level.textContent = element.name;
-      benefits.textContent = element.benefits.join(". ");
+
+      element.benefits.forEach((value) => {
+        let benefits = document.createElement("li");
+        benefits.textContent = value;
+        benefitsList.appendChild(benefits);
+      });
+
       closeModal.textContent = "❌";
+      price.textContent = `Precio: ${element.price} USD mensualmente.`;
 
       modal.appendChild(level);
       modal.appendChild(closeModal);
-      modal.appendChild(benefits);
+      modal.appendChild(benefitsList);
+      modal.appendChild(price);
 
       modal.showModal();
 

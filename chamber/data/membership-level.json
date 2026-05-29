@@ -3,11 +3,11 @@
     "level": "non-profit",
     "code": 0,
     "name": "Nivel Sin Fines de Lucro",
-    "price": 10.0,
+    "price": 0.0,
     "benefits": [
-      "Acceso a eventos comunitarios básicos",
-      "Descuento del 10% en entradas para talleres",
-      "Listado en el directorio web de la Cámara"
+      "Acceso a eventos comunitarios básicos.",
+      "Descuento del 10% en entradas para talleres.",
+      "Listado en el directorio web de la Cámara."
     ]
   },
   {
@@ -16,9 +16,9 @@
     "name": "Nivel Bronce",
     "price": 15.0,
     "benefits": [
-      "Todos los beneficios del nivel 'Sin Fines de Lucro'",
-      "2 sesiones de entrenamiento empresarial al año",
-      "Descuento del 15% en eventos oficiales"
+      "Todos los beneficios del nivel 'Sin Fines de Lucro'.",
+      "2 sesiones de entrenamiento empresarial al año.",
+      "Descuento del 15% en eventos oficiales."
     ]
   },
   {
@@ -27,9 +27,9 @@
     "name": "Nivel Plata",
     "price": 30.0,
     "benefits": [
-      "Todos los beneficios del nivel Bronce",
-      "Publicidad: posición destacada en la página de inicio cada 3 meses",
-      "Descuento del 25% en stands de eventos de la Cámara"
+      "Todos los beneficios del nivel Bronce.",
+      "Publicidad: posición destacada en la página de inicio cada 3 meses.",
+      "Descuento del 25% en stands de eventos de la Cámara."
     ]
   },
   {
@@ -38,10 +38,10 @@
     "name": "Nivel Oro",
     "price": 50.0,
     "benefits": [
-      "Todos los beneficios del nivel Plata",
-      "Publicidad premium: posición destacada en la página de inicio de la Cámara todo el año",
-      "Acceso ilimitado a capacitaciones, entrenamientos y certificaciones",
-      "Pases VIP con 50% de descuento para los eventos de gala anuales"
+      "Todos los beneficios del nivel Plata.",
+      "Publicidad premium: posición destacada en la página de inicio de la Cámara todo el año.",
+      "Acceso ilimitado a capacitaciones, entrenamientos y certificaciones.",
+      "Pases VIP con 50% de descuento para los eventos de gala anuales."
     ]
   }
 ]
