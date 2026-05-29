@@ -261,7 +261,6 @@ form input[type="submit"] {
   background-color: var(--secondary-accent);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  margin: 2 0;
   font-size: 1rem;
 }
 
