@@ -1,6 +1,5 @@
 const getString = window.location.search;
 const formInfo = new URLSearchParams(getString);
-console.log(formInfo);
 
 let fullName = document.createElement("p");
 let email = document.createElement("p");
