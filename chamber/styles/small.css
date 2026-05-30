@@ -412,6 +412,39 @@ form input[type="submit"]:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.thankyou {
+  display: flex;
+  background-color: var(--secondary-color);
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.thankyou h1 {
+  font-family: var(--heading-font);
+  color: white;
+  font-size: 1.3rem;
+}
+
+.results {
+  text-align: left;
+  color: white;
+  line-height: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.thankyou img {
+  width: 100px;
+  height: auto;
+}
+
 /********* FOOTER *********/
 footer {
   display: grid;
