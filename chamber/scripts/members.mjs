@@ -93,6 +93,7 @@ export function spotlightMembers(data) {
 }
 
 export function displayMembersLevels(data) {
+  if (!document.querySelector("#member-modal")) return;
   const modal = document.querySelector("#member-modal");
 
   data.forEach((element) => {

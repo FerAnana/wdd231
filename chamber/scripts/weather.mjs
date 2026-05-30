@@ -29,7 +29,8 @@ export async function getForecast(forecastUrl) {
 }
 
 function currentTemp(data) {
-  let div = document.createElement("div")
+  if (!document.querySelector("#current-weather")) return;
+  let div = document.createElement("div");
   let celsius = document.createElement("p");
   let description = document.createElement("p");
   let highTemp = document.createElement("p");
@@ -61,7 +62,7 @@ function currentTemp(data) {
   sunset.textContent = `Atardecer: ${sunsetSunriseTime(data.sys.sunset)}`;
   weatherIcon.setAttribute("src", icon);
   weatherIcon.setAttribute("loading", "lazy");
-  div.setAttribute("class", "data")
+  div.setAttribute("class", "data");
 
   div.appendChild(weatherIcon);
   div.appendChild(celsius);
@@ -75,6 +76,7 @@ function currentTemp(data) {
 }
 
 function displayForecast(data) {
+  if (!document.querySelector("#weather-forecast")) return;
   let todayForecast = document.createElement("p");
   let tomorrowForecast = document.createElement("p");
   let afterTomorrow = document.createElement("p");
