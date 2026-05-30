@@ -92,7 +92,7 @@
             title="Tus apellidos"
             autocomplete="family-name"
           />
-          <label for="title">Título</label>
+          <label for="title">Título (solo letras, mínimo 7 carácteres)</label>
           <input
             type="text"
             id="title"
@@ -100,7 +100,7 @@
             required
             title="Tu título en la empresa"
             autocomplete="organization-title"
-            pattern="[A-za-z\s-]{7,}"
+            pattern="[A-Za-z\s\-]{7,}"
           />
           <label for="email">Email</label>
           <input
