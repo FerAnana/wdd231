@@ -67,16 +67,28 @@
     background-color: #b300ff28;
   }
 
-  .form-card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  /****** Index ******/
+  .principal-menu {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
 
-  .form-title, form {
+  .spotlights {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .form-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-title,
+  form {
     grid-column: 1/2;
   }
 
-  .levels-title, .membership-levels {
+  .levels-title,
+  .membership-levels {
     grid-column: 2/3;
   }
 

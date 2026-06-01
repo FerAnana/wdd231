@@ -109,6 +109,8 @@ footer {
 }
 
 /********* MAIN *********/
+
+/****** Directory ******/
 main {
   margin: 0 1.5rem;
 }
@@ -140,12 +142,12 @@ h3 {
   margin: 1.5rem 0;
 }
 
-section {
+#members section {
   border: 1px solid rgb(0 0 0 / 10%);
   padding: 0.5rem;
 }
 
-section a {
+#members section a {
   font-family: Arial, sans-serif;
   font-size: 0.85rem;
   color: navy;
@@ -158,7 +160,7 @@ section h3 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -198,6 +200,112 @@ section h3 {
 .list section .img-list-view > * {
   margin: 0.5rem;
 }
+
+/****** Index ******/
+
+.hero {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero picture {
+  margin: 0;
+  padding: 0;
+}
+
+.principal-menu {
+  display: grid;
+  grid-template-columns: repeat(autp-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.current-events p {
+  margin: 1rem;
+}
+
+.current-weather {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.current-weather h2 {
+  padding: 0;
+  margin: 0;
+  grid-column: 1/3;
+}
+
+.current-weather img {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.current-weather .data {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 1rem 0;
+}
+
+.forecast-data p {
+  margin: 0.5rem 1rem;
+}
+
+.principal-menu section {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.principal-menu h2 {
+  background-color: var(--primary-color);
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+.spotlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.spotlights section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-accent);
+  padding: 0;
+  border: none;
+  border-radius: 15px;
+  width: 330px;
+  height: 255px;
+}
+
+.spotlights h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.spotlights p {
+  padding: 0 1rem;
+}
+
+.spotlights section > * {
+  margin: 0.2rem;
+}
+
+.spotlights img {
+  margin: 1rem auto;
+  justify-self: center;
+  width: 250px;
+  height: 70px;
+}
+
+/****** Join ******/
 
 .form-card-container {
   display: grid;

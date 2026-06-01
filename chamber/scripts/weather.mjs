@@ -51,7 +51,7 @@ function currentTemp(data) {
     return `${hours}:${minutes}`;
   };
 
-  celsius.textContent = `${Math.floor(data.main.temp)}°C`;
+  celsius.innerHTML = `<strong>${Math.floor(data.main.temp)}°C</strong>`;
   description.textContent =
     data.weather[0].description.charAt(0).toUpperCase() +
     data.weather[0].description.slice(1).toLowerCase();
@@ -62,9 +62,9 @@ function currentTemp(data) {
   sunset.textContent = `Atardecer: ${sunsetSunriseTime(data.sys.sunset)}`;
   weatherIcon.setAttribute("src", icon);
   weatherIcon.setAttribute("loading", "lazy");
+  weatherIcon.setAttribute("alt", "Weather icon");
   div.setAttribute("class", "data");
 
-  div.appendChild(weatherIcon);
   div.appendChild(celsius);
   div.appendChild(description);
   div.appendChild(highTemp);
@@ -72,11 +72,14 @@ function currentTemp(data) {
   div.appendChild(humidity);
   div.appendChild(sunrise);
   div.appendChild(sunset);
+
+  document.querySelector("#current-weather").appendChild(weatherIcon);
   document.querySelector("#current-weather").appendChild(div);
 }
 
 function displayForecast(data) {
   if (!document.querySelector("#weather-forecast")) return;
+  let forecastData = document.createElement("div");
   let todayForecast = document.createElement("p");
   let tomorrowForecast = document.createElement("p");
   let afterTomorrow = document.createElement("p");
@@ -97,11 +100,14 @@ function displayForecast(data) {
     return days[localDate.getUTCDay()];
   };
 
-  todayForecast.textContent = `Hoy: ${Math.floor(data.list[0].main.temp)}°C`;
-  tomorrowForecast.textContent = `${dayOfTheWeek(data.list[8].dt)}: ${Math.floor(data.list[8].main.temp)}°C`;
-  afterTomorrow.textContent = `${dayOfTheWeek(data.list[16].dt)}: ${Math.floor(data.list[16].main.temp)}°C`;
+  forecastData.setAttribute("class", "forecast-data");
+  todayForecast.innerHTML = `Hoy: <strong>${Math.floor(data.list[0].main.temp)}°C</strong>`;
+  tomorrowForecast.innerHTML = `${dayOfTheWeek(data.list[8].dt)}: <strong>${Math.floor(data.list[8].main.temp)}°C</strong>`;
+  afterTomorrow.innerHTML = `${dayOfTheWeek(data.list[16].dt)}: <strong>${Math.floor(data.list[16].main.temp)}°C</strong>`;
 
-  document.querySelector("#weather-forecast").appendChild(todayForecast);
-  document.querySelector("#weather-forecast").appendChild(tomorrowForecast);
-  document.querySelector("#weather-forecast").appendChild(afterTomorrow);
+  forecastData.appendChild(todayForecast);
+  forecastData.appendChild(tomorrowForecast);
+  forecastData.appendChild(afterTomorrow);
+
+  document.querySelector("#weather-forecast").appendChild(forecastData);
 }

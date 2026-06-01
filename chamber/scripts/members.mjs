@@ -68,9 +68,9 @@ export function spotlightMembers(data) {
     const businessUrl = document.createElement("a");
 
     businessName.textContent = element.company_name;
-    businessAddress.textContent = element.company_address;
-    businessPhone.textContent = `Teléfono: ${element.phone_number}`;
-    businessUrlP.textContent = "URL: ";
+    businessAddress.innerHTML = `<strong>Dirección:</strong> ${element.company_address}`;
+    businessPhone.innerHTML = `<strong>Teléfono:</strong> ${element.phone_number}`;
+    businessUrlP.innerHTML = "<strong>URL:</strong> ";
     businessUrl.textContent = element.company_website;
     businessUrl.setAttribute("href", `${element.company_website}`);
     businessUrl.setAttribute("target", "_blank");
