@@ -280,7 +280,7 @@ section h3 {
   border: none;
   border-radius: 15px;
   width: 330px;
-  height: 255px;
+  height: 275px;
 }
 
 .spotlights h3 {
@@ -301,8 +301,6 @@ section h3 {
 .spotlights img {
   margin: 1rem auto;
   justify-self: center;
-  width: 250px;
-  height: 70px;
 }
 
 /****** Join ******/

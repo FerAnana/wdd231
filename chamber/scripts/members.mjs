@@ -77,6 +77,7 @@ export function spotlightMembers(data) {
     businessLogo.setAttribute("src", `${element.image_file}`);
     businessLogo.setAttribute("width", "250");
     businessLogo.setAttribute("height", "auto");
+    businessLogo.setAttribute("alt", element.company_name);
     businessLogo.setAttribute("loading", "lazy");
 
     businessUrlP.appendChild(businessUrl);
