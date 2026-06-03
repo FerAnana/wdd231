@@ -16,10 +16,13 @@
       property="og:image"
       content="https://feranana.github.io/wdd231/chamber/images/logo.svg"
     />
-    <meta property="og:title" content="Home - Paysandú Chamber of Commerce" />
+    <meta
+      property="og:title"
+      content="Discover - Paysandú Chamber of Commerce"
+    />
     <meta
       property="og:url"
-      content="https://feranana.github.io/wdd231/chamber/"
+      content="https://feranana.github.io/wdd231/chamber/discover.html"
     />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="../styles/normalize.css" />
@@ -34,7 +37,7 @@
     <script src="scripts/responsive-menu.mjs" defer></script>
     <script src="scripts/dates.mjs" defer></script>
     <script type="module" src="scripts/modules.mjs"></script>
-    <title>Home - Paysandú Chamber of Commerce</title>
+    <title>Discover - Paysandú Chamber of Commerce</title>
   </head>
   <body>
     <header>
@@ -43,13 +46,20 @@
           src="images/logo.svg"
           width="500"
           height="500"
+          loading="lazy"
           alt="Mburucuyá flower"
         />
-        <span><a href="#">Cámara de comercio de Paysandú</a></span>
+        <span
+          ><a href="https://feranana.github.io/wdd231/chamber/"
+            >Cámara de comercio de Paysandú</a
+          ></span
+        >
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
         <nav id="nav-bar" class="navigation">
           <ul>
-            <li><a href="#" class="current">Inicio</a></li>
+            <li>
+              <a href="https://feranana.github.io/wdd231/chamber/">Inicio</a>
+            </li>
             <li>
               <a href="https://feranana.github.io/wdd231/chamber/directory.html"
                 >Directorio</a
@@ -60,45 +70,12 @@
                 >Únete</a
               >
             </li>
-            <li><a href="https://feranana.github.io/wdd231/chamber/discover.html">Descubre</a></li>
+            <li><a href="#" class="current">Descubre</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <section class="hero">
-        <picture class="hero-picture">
-          <source
-            srcset="images/hero-image-large.webp"
-            media="(min-width: 1000px)"
-          />
-          <source
-            srcset="images/hero-image-medium.webp"
-            media="(min-width: 600px)"
-          />
-          <img
-            src="images/hero-image-small.webp"
-            alt="Paysandú landscape"
-            class="hero-img"
-          />
-        </picture>
-        <button class="call-to-action">¡Únete!</button>
-      </section>
-      <h1>Inicio</h1>
-      <div class="principal-menu">
-        <section class="current-events">
-          <h2>Eventos</h2>
-          <p>placeholder</p>
-        </section>
-        <section id="current-weather" class="current-weather">
-          <h2>Temperatura actual</h2>
-        </section>
-        <section id="weather-forecast" class="weather-forecast">
-          <h2>Pronóstico</h2>
-        </section>
-      </div>
-      <div id="spotlights" class="spotlights"></div>
-    </main>
+    <main></main>
     <footer>
       <div class="address">
         <p><strong>Cámara de Comercio de Paysandú</strong></p>
