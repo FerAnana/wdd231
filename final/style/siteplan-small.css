@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #2d1115;
+  --primary-accent: #65334d;
+  --secondary-color: #cb04a5;
+  --secondary-accent: #f433ab;
+  --heading-font: "Mozilla Text", sans-serif;
+  --body-font: "Nunito sans", sans-serif;
+}
+
+* {
+  font-family: var(--body-font);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header,
+main,
+footer {
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 1rem;
+  color: white;
+  background-color: var(--primary-color);
+  gap: 0.5rem;
+}
+
+h1 {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.image-p,
+.image-s {
+  margin: 0;
+  height: 175px;
+  color: white;
+  background-color: var(--primary-accent);
+  border: solid 1px black;
+}
+
+.image p {
+  text-align: center;
+}
+
+.purpose {
+  display: grid;
+}
+
+.purpose > h2 {
+  display: none;
+  align-self: center;
+  justify-self: center;
+}
+
+.purpose > p {
+  display: none;
+  margin: 1rem;
+}
+
+.purpose .image-p {
+  width: 85%;
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+.image-p h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.image-p p {
+  text-align: center;
+  margin: 1rem;
+}
+
+.image-file {
+  display: none;
+}
+
+.image-p {
+  justify-self: flex-end;
+}
+
+.scenario {
+  display: grid;
+  width: 100%;
+}
+
+.scenario > h2 {
+  display: none;
+  text-align: center;
+}
+
+.scenario > ul {
+  display: none;
+  margin: 1rem;
+}
+
+.scenario .image-s {
+  width: 85%;
+  height: fit-content;
+}
+
+.image-s h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.image-s ul {
+  margin: 1rem;
+}
+
+.wireframes {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.desktop {
+  border: 1px solid black;
+  width: 350px;
+  height: auto;
+}
+
+.mobile {
+  width: 350px;
+  height: auto;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 0 1rem 0.5rem;
+  height: fit-content;
+  justify-content: center;
+  gap: 1.5rem;
+  line-height: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.one {
+  grid-column: 1/2;
+}
+
+.two {
+  grid-column: 2/3;
+}
