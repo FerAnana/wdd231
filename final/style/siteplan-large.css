@@ -1,2 +1,85 @@
 @media only screen and (min-width: 38rem) {
+  .purpose h2,
+  .purpose p,
+  .scenario h2,
+  .scenario ul {
+    display: block;
+  }
+
+  .image-s h2,
+  .image-s ul,
+  .image-p h2,
+  .image-p p {
+    display: none;
+  }
+
+  .image-file {
+    display: block;
+  }
+
+  .purpose {
+    grid-template-columns: 40% 60%;
+  }
+
+  .purpose h2,
+  .purpose p {
+    grid-column: 1/2;
+  }
+
+  .purpose .image-p {
+    text-align: center;
+    grid-column: 2/3;
+    width: 100%;
+    height: 175px;
+  }
+
+  .scenario {
+    grid-template-columns: 60% 40%;
+  }
+
+  .scenario h2 {
+    grid-row: 1/2;
+  }
+
+  .scenario h2,
+  .scenario ul {
+    grid-column: 2/3;
+  }
+
+  .scenario ul {
+    grid-row: 2/3;
+  }
+
+  .scenario .image-s {
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    height: 175px;
+  }
+
+  .wireframe h2 {
+    margin: 0;
+    grid-row: 1/2;
+    text-align: center;
+  }
+
+  .flex {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    justify-items: space-evenly;
+  }
+
+  .desktop {
+    grid-row: 2/3;
+    width: auto;
+    height: 400px;
+  }
+
+  .mobile {
+    grid-row: 2/3;
+    width: auto;
+    height: 400px;
+  }
 }
