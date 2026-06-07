@@ -24,7 +24,7 @@ export function displayPlaces(placesList = places) {
     image.setAttribute("width", "300");
     image.setAttribute("height", "200");
     image.setAttribute("loading", "lazy");
-    address.textContent = `Address: ${element.address}`;
+    address.textContent = `Dirección: ${element.address}`;
 
     figure.appendChild(image);
 

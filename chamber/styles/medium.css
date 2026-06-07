@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 38rem) {
   .hamburger {
     display: none;
   }
@@ -43,72 +43,13 @@
   }
 
   /********* MAIN *********/
-  .list {
-    display: flex;
-    flex-direction: column;
-  }
-  .list section {
-    display: grid;
-    border: none;
-    grid-template-columns: 2fr 1fr 1fr;
-    margin: 0;
-    padding: 0.5rem;
-  }
-
-  .list section > * {
-    margin: 0 1rem;
-  }
-
-  .list section img {
-    display: none;
-  }
-
-  .list section:nth-child(even) {
-    background-color: #b300ff28;
-  }
-
-  /****** Index ******/
-  .principal-menu {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-  }
-
-  .spotlights {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .form-card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .form-title,
-  form {
-    grid-column: 1/2;
-  }
-
-  .levels-title,
-  .membership-levels {
-    grid-column: 2/3;
-  }
-
-  .member-modal {
-    width: 500px;
-  }
-
-  #discover {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
 
   #discover .card {
     width: auto;
     grid-template-areas:
-      "name"
-      "photo"
-      "address"
-      "description"
-      "button";
+      "photo name"
+      "photo description"
+      "address button";
   }
 
   /********* FOOTER *********/

@@ -551,6 +551,65 @@ form input[type="submit"]:hover {
   height: auto;
 }
 
+/****** Discover ******/
+
+#welcome-message {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+#discover {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#discover .card {
+  margin: 1rem auto;
+  width: 300px;
+  border: solid 1px black;
+  border-radius: 15px 15px 0 0;
+  display: grid;
+  grid-template-areas:
+    "photo"
+    "name"
+    "description"
+    "address"
+    "button";
+  background-color: var(--secondary-accent);
+  overflow: hidden;
+}
+
+#discover h2 {
+  grid-area: name;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+#discover figure {
+  grid-area: photo;
+  width: 100%;
+  height: auto;
+}
+
+#discover p {
+  margin: 1rem;
+}
+
+#discover address {
+  grid-area: address;
+  margin: 1rem;
+}
+
+#discover button {
+  grid-area: button;
+  position: relative;
+  bottom: 1rem;
+  margin: 1rem auto 0;
+  width: 50%;
+  height: 2rem;
+}
+
 /********* FOOTER *********/
 footer {
   display: grid;
