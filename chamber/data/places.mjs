@@ -1,0 +1,58 @@
+export const places = [
+  {
+    name: "Flor de Ciudad",
+    address: "Plaza Lavalleja",
+    description:
+      "Una feria con una duración de tres días, que convoca a viveristas, productores, emprendedores, instituciones y artistas, promoviendo la naturaleza y el encuentro comunitario. La propuesta combina la venta de flores, plantas, plantines, árboles, e insumos para la huerta y jardinería. A ello se le suma la presencia de un patio gastronómico y una diversa programación artística.",
+    img: "images/flor-de-ciudad.webp",
+  },
+  {
+    name: "Meseta de Artigas",
+    address: "Ruta N° 3, Km 463",
+    description:
+      "Se trata de una elevación natural coronada por un imponente monumento de 37 metros de altura en honor al prócer nacional José Gervasio Artigas, construido en el lugar donde históricamente se ubicó el campamento de Purificación.",
+    img: "images/meseta-de-artigas.webp",
+  },
+  {
+    name: "Semana de la Cerveza",
+    address: "Anfiteatro del Río Uruguay",
+    description:
+      "La Semana de la Cerveza de Paysandú, celebrada durante Semana de Turismo, es el evento popular más grande del país, una fiesta que combina música, gastronomía, deporte y tradición en un solo lugar. Durante nueve días, el predio ferial del Balneario Municipal recibe a miles de visitantes que disfrutan de espectáculos de primer nivel, feria artesanal, patio gastronómico, propuestas cerveceras, y actividades para toda la familia.",
+    img: "images/semana-de-la-cerveza.webp",
+  },
+  {
+    name: "Termas de Almirón",
+    address: "Ruta N° 90, Km 85",
+    description:
+      "En septiembre Termas de Almirón te espera con distintas actividades para disfrutar de las vacaciones. Entre ellas, se encuentran actividades deportivas, espectáculos para toda la familia, plaza de comidas, y ferias de artesanos. Todo dispuesto en un entorno único, rodeado de naturaleza y aguas termales ideales para fines terapéuticos.",
+    img: "images/termas-de-almiron.webp",
+  },
+  {
+    name: "Termas de Guaviyú",
+    address: "Ruta N° 3, Km 432",
+    description:
+      "Semana de Turismo en Termas de Guaviyú ofrece la posibilidad de disfrutar de shows en vivo durante toda la semana, sumado a actividades acuáticas, travesía por el arroyo Guaviyú, búsqueda del tesoro, actividades lúdicas y deportivas, contando con la presencia de plaza de comidas y barra de tragos.",
+    img: "images/termas-de-guaviyu.webp",
+  },
+  {
+    name: "Monumento a la Perpetuidad",
+    address: "Montecaseros entre Artigas y Av. Soriano",
+    description:
+      "El Monumento a la Perpetuidad, popularmente conocido como el Cementerio Viejo, es un sitio patrimonial único en Uruguay ubicado en la ciudad de Paysandú. Fundado en 1835 y clausurado para sepelios a finales del siglo XIX, hoy funciona como un museo abierto que destaca por su impactante valor arquitectónico, escultórico e histórico, reflejando el auge económico y cultural de la sociedad sanducera de la época.",
+    img: "images/monumento-perpetuidad.webp",
+  },
+  {
+    name: "Vuela Termas",
+    address: "Ruta N° 90, Km 85",
+    description:
+      "Durante el mes de febrero se lleva a cabo Vuela Termas, encuentro internacional de aeromodelismo que tiene lugar también en Termas de Almirón, con más de 180 aviones, helicópteros, drones y pilotos de Uruguay, Argentina y Brasil. Los espectadores pueden presenciar en la mañana, tarde y noche un espectáculo de gran nivel, con los mejores pilotos de la región que dicen presente en el complejo termal.",
+    img: "images/vuela-termas.webp",
+  },
+  {
+    name: "Mausoleo de Leandro Gómez",
+    address: "Plaza Constitución",
+    description:
+      "Justo debajo del monumento, en el subsuelo, funciona un espacio museístico y mausoleo dedicado a la memoria de la Defensa de 1864. Cuenta con un formato interpretativo y tecnológico que exhibe cartas, fotografías, material interactivo y la nómina de los combatientes.",
+    img: "images/mausoleo-leandro-gomez.webp",
+  },
+];
