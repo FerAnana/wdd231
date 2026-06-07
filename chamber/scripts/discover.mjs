@@ -23,6 +23,7 @@ export function displayPlaces(placesList = places) {
     image.setAttribute("alt", element.name);
     image.setAttribute("width", "300");
     image.setAttribute("height", "200");
+    image.setAttribute("loading", "lazy");
     address.textContent = `Address: ${element.address}`;
 
     figure.appendChild(image);
