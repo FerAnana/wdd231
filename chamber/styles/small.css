@@ -576,7 +576,7 @@ form input[type="submit"]:hover {
     "description"
     "address"
     "button";
-  background-color: var(--secondary-accent);
+  background-color: #ffc9c487;
   overflow: hidden;
 }
 

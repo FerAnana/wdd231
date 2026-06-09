@@ -23,7 +23,11 @@ export function displayPlaces(placesList = places) {
     image.setAttribute("alt", element.name);
     image.setAttribute("width", "300");
     image.setAttribute("height", "200");
-    image.setAttribute("loading", "lazy");
+    if (element.name == "Flor de Ciudad") {
+      image.setAttribute("loading", "eager");
+    } else {
+      image.setAttribute("loading", "lazy");
+    }
     address.textContent = `Dirección: ${element.address}`;
 
     figure.appendChild(image);

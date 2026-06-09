@@ -52,6 +52,25 @@
       "address button";
   }
 
+  @keyframes zoom-in {
+    0% {
+    }
+    50% {
+      transform: scale(1.025);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+  #discover img {
+    transition: transform .5s ease;
+  }
+
+  #discover img:hover {
+    transform: scale(1.05);
+  }
+
   /********* FOOTER *********/
 
   footer {

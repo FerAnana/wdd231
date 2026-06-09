@@ -96,6 +96,8 @@
     width: 500px;
   }
 
+  /****** Discover ******/
+
   #discover {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -109,6 +111,16 @@
       "address"
       "description"
       "button";
+  }
+
+  #discover figure {
+    display: flex;
+    justify-content: center;
+  }
+
+  #discover img {
+    height: 150px;
+    object-fit: cover;
   }
 
   /********* FOOTER *********/
