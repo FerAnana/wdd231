@@ -10,8 +10,10 @@
     margin-bottom: 2rem;
   }
 
-  .pod img {
+  .pod img, .gallery img {
     width: 375px;
+    height: 275px;
+    object-fit: cover;
     grid-area: photo;
   }
 
@@ -27,11 +29,6 @@
     grid-template-areas:
       "photo title"
       "photo paragraph";
-  }
-
-  .gallery img {
-    width: 375px;
-    grid-area: photo;
   }
 
   .gallery h2 {
