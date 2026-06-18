@@ -1,0 +1,94 @@
+@media only screen and (min-width: 64rem) {
+  .hamburger {
+    display: none;
+  }
+
+  .header-menu {
+    grid-template-columns: 50px auto 400px;
+    gap: 1rem;
+  }
+
+  .header-menu span {
+    grid-column: 2/3;
+  }
+
+  .header-menu img {
+    grid-column: 1/2;
+  }
+
+  .navigation {
+    display: flex;
+    margin: 0 1rem;
+    align-items: center;
+    grid-column: 3/4;
+  }
+
+  .header-menu .navigation ul {
+    display: flex;
+    background-color: var(--primary-color);
+    border: none;
+  }
+
+  .header-menu .navigation li {
+    flex: 1 1 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    border: none;
+  }
+
+  .navigation a {
+    background-color: var(--primary-color);
+    margin: 0 1rem;
+    padding: 0;
+    color: white;
+    border: none;
+  }
+
+  .navigation a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-accent);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .pod h2,
+  .pod p,
+  .gallery h2,
+  .gallery p {
+    display: block;
+  }
+
+  .pod {
+    grid-template-areas:
+      "title photo"
+      "paragraph photo";
+    margin-bottom: 2rem;
+  }
+
+  .pod img, .gallery img {
+    width: 700px;
+    object-fit: cover;
+  }
+
+  footer {
+    display: grid;
+    padding: 1rem 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer .address {
+    grid-column: 1/2;
+    justify-self: center;
+  }
+
+  footer .social-media {
+    justify-self: center;
+    grid-column: 2/3;
+  }
+
+  footer .student-info {
+    grid-column: 3/3;
+    justify-self: center;
+  }
+}

@@ -1,0 +1,191 @@
+:root {
+  --primary-color: #2d1115;
+  --primary-accent: #65334d;
+  --secondary-color: #cb04a5;
+  --secondary-accent: #f433ab;
+  --heading-font: "Mozilla Text", sans-serif;
+  --body-font: "Nunito sans", sans-serif;
+}
+
+* {
+  font-family: var(--body-font);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+header,
+main,
+footer {
+  margin: 0 auto;
+}
+
+main a {
+  padding: .5rem;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: var(--secondary-accent);
+}
+
+/********* HEADER *********/
+
+.header-menu {
+  display: grid;
+  background-color: var(--primary-color);
+  grid-template-columns: 30px auto 44px;
+  gap: 0.5rem;
+}
+
+.header-menu img {
+  grid-column: 1/2;
+  width: 100%;
+  padding: 0.5rem;
+  height: auto;
+  align-self: center;
+}
+
+.header-menu span {
+  grid-column: 2/3;
+  font-size: 1.2rem;
+  text-align: left;
+  align-self: center;
+}
+
+.header-menu a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger {
+  cursor: pointer;
+  background: none;
+  grid-column: 3/4;
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+}
+
+.hamburger::before {
+  content: "\2630";
+  color: var(--secondary-color);
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+  grid-column: 1/4;
+  margin: 0;
+  width: 100%;
+  background-color: var(--secondary-accent);
+}
+.navigation ul {
+  background-color: var(--secondary-color);
+  border-top: solid 1px var(--primary-color);
+  border-bottom: solid 1px var(--primary-color);
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.navigation a {
+  background-color: var(--primary-accent);
+  border-top: solid 1px var(--primary-color);
+  border-bottom: solid 1px var(--primary-color);
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation a:hover {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.navigation .current {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/********* MAIN *********/
+
+h1 {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.pod, .gallery {
+  display: grid;
+}
+
+.pod h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.pod p {
+  margin: 0 1.5rem 1.5rem;
+}
+
+.pod img,
+.gallery img {
+  width: 100%;
+}
+
+.gallery img {
+  margin-bottom: 2rem;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.gallery p {
+  margin: 0 1.5rem 1.5rem;
+}
+
+/********* FOOTER *********/
+
+footer {
+  display: grid;
+  padding: 1rem 0 1rem 0.5rem;
+  gap: 1.5rem;
+  line-height: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer a {
+  color: var(--secondary-accent);
+}
+
+footer img {
+  margin: 0 .25rem;
+  width: 44px;
+  height: auto;
+}
+
+.address,
+.student-info {
+  margin: 0.5rem 0;
+}

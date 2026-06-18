@@ -1,0 +1,44 @@
+@media only screen and (min-width: 38rem) {
+  .header-menu {
+    grid-template-columns: 44px auto 44px;
+  }
+  
+  .pod {
+    grid-template-areas:
+      "title photo"
+      "paragraph photo";
+    margin-bottom: 2rem;
+  }
+
+  .pod img {
+    width: 375px;
+    grid-area: photo;
+  }
+
+  .pod h2 {
+    grid-area: title;
+  }
+
+  .pod p {
+    grid-area: paragraph;
+  }
+
+  .gallery {
+    grid-template-areas:
+      "photo title"
+      "photo paragraph";
+  }
+
+  .gallery img {
+    width: 375px;
+    grid-area: photo;
+  }
+
+  .gallery h2 {
+    grid-area: title;
+  }
+
+  .gallery p {
+    grid-area: paragraph;
+  }
+}

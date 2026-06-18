@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fernando Añaña" />
+    <meta
+      name="description"
+      content="Explore the comprehensive site plan for my WDD231 final project. Includes target audience scenarios, typography, color scheme, and wireframes."
+    />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/small.css" />
+    <link rel="stylesheet" href="style/medium.css" />
+    <link rel="stylesheet" href="style/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/responsive-menu.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/modules.mjs" type="modules"></script>
+    <title>AstroDaily</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-menu">
+        <img src="images/logo.svg" width="50" height="50" alt="Logo" />
+        <span><a href="#">AstroDaily</a></span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+        <nav id="nav-bar" class="navigation">
+          <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li>
+              <a href="#">Picture of the Day</a>
+            </li>
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Home</h1>
+      <div class="content">
+        <section class="pod">
+          <h2><a href="#">Picture of the day</a></h2>
+          <p>
+            Dive into the mysteries of deep space with a daily window into the
+            cosmos, showcasing stunning nebulas, distant galaxies, and celestial
+            phenomena captured by NASA's advanced telescopes and brave
+            explorers.
+          </p>
+          <img
+            src="images/galaxy2.webp"
+            width="500"
+            height="250"
+            alt="galaxy"
+            loading="eager"
+          />
+        </section>
+        <section class="gallery">
+          <h2><a href="#">Gallery</a></h2>
+          <p>
+            Our gallery brings together a stunning collection of deep-space
+            photography, planetary flybys. Wander through breathtaking views of
+            distant galaxies, cosmic dust clouds, and celestial wonders captured
+            by NASA's most powerful telescopes.
+          </p>
+          <img
+            src="images/galaxy1.webp"
+            width="500"
+            height="250"
+            alt="galaxy"
+            loading="eager"
+          />
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="address">
+        <p><strong>AstroDaily</strong></p>
+        <p>astrodaily@email.org</p>
+        <p>(1)472-0000</p>
+        <a href="#">Youtube video</a>
+      </div>
+      <div class="social-media">
+        <a href="https://youtube.com"
+          ><img
+            src="images/github.svg"
+            width="50"
+            height="50"
+            alt="Youtube logo"
+            loading="lazy"
+        /></a>
+        <a href="https://x.com/"
+          ><img
+            src="images/instagram.svg"
+            width="50"
+            height="50"
+            alt="X logo"
+            loading="lazy"
+        /></a>
+        <a href="https://linkedin.com"
+          ><img
+            src="images/linkedin.svg"
+            width="50"
+            height="50"
+            alt="Linkedin logo"
+            loading="lazy"
+        /></a>
+      </div>
+      <div class="student-info">
+        <p>WDD231 Class Project</p>
+        <p>Fernando Añaña</p>
+        <p>©<span id="currentYear"></span> AstroDaily</p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+  </body>
+</html>
