@@ -12,14 +12,10 @@ if (form && timestampInput) {
 
   let fullName = document.createElement("p");
   let email = document.createElement("p");
-  let phone = document.createElement("p");
-  let businessName = document.createElement("p");
   let timestamp = document.createElement("p");
 
   fullName.textContent = `Nombre: ${formInfo.get("first-name")} ${formInfo.get("last-name")}`;
   email.textContent = `Correo electrónico: ${formInfo.get("email")}`;
-  phone.textContent = `Teléfono: ${formInfo.get("phone-number")}`;
-  businessName.textContent = `Nombre de la empresa: ${formInfo.get("business-name")}`;
 
   const urlTimestamp = formInfo.get("timestamp");
   if (urlTimestamp) {
@@ -38,7 +34,5 @@ if (form && timestampInput) {
 
   results.appendChild(fullName);
   results.appendChild(email);
-  results.appendChild(phone);
-  results.appendChild(businessName);
   results.appendChild(timestamp);
 }

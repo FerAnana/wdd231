@@ -24,7 +24,7 @@ footer {
 }
 
 main a {
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 10px;
   background-color: var(--primary-color);
   color: var(--secondary-accent);
@@ -125,7 +125,7 @@ main a {
 
 h1 {
   margin: 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .content {
@@ -133,7 +133,8 @@ h1 {
   grid-template-columns: 1fr;
 }
 
-.pod, .gallery {
+.pod,
+.gallery {
   display: grid;
 }
 
@@ -165,6 +166,134 @@ h1 {
   margin: 0 1.5rem 1.5rem;
 }
 
+/********* POD *********/
+
+.pofd {
+  display: grid;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  grid-template-columns: 1fr;
+  padding-top: 1rem;
+}
+
+.pofd h2 {
+  text-align: center;
+}
+
+.pod-date {
+  text-align: center;
+  margin: 1rem;
+}
+
+.pod-description {
+  margin: 2rem 1rem;
+}
+
+.pofd img {
+  width: 100%;
+  height: auto;
+}
+
+.form-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+form {
+  background-color: #ddd;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+form label {
+  display: block;
+  font-size: 0.8rem;
+  padding-top: 0.2rem;
+}
+
+form h3 {
+  font-size: 0.9rem;
+  margin: 1.5rem 0 0.2rem 0;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  padding: 0.3rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form input:required {
+  border-left-width: 4px;
+  border-left-color: rgb(202, 6, 6);
+}
+
+form input:required:valid {
+  border-left-width: 4px;
+  border-left-color: rgb(41, 168, 16);
+}
+
+form input[type="submit"] {
+  margin: 1rem auto;
+  width: 150px;
+  display: block;
+  text-align: center;
+  background-color: var(--secondary-accent);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  color: white;
+}
+
+.subscription {
+  display: flex;
+  background-color: var(--primary-color);
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.subscription h1 {
+  font-family: var(--heading-font);
+  color: white;
+  font-size: 1.3rem;
+}
+
+.results {
+  text-align: left;
+  color: white;
+  line-height: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--primary-accent);
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.sub-message {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.subscription img {
+  width: 100px;
+  height: auto;
+}
+
 /********* FOOTER *********/
 
 footer {
@@ -181,7 +310,7 @@ footer a {
 }
 
 footer img {
-  margin: 0 .25rem;
+  margin: 0 0.25rem;
   width: 44px;
   height: auto;
 }

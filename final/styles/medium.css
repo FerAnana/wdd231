@@ -2,7 +2,7 @@
   .header-menu {
     grid-template-columns: 44px auto 44px;
   }
-  
+
   .pod {
     grid-template-areas:
       "title photo"
@@ -10,7 +10,8 @@
     margin-bottom: 2rem;
   }
 
-  .pod img, .gallery img {
+  .pod img,
+  .gallery img {
     width: 375px;
     height: 275px;
     object-fit: cover;
@@ -37,5 +38,12 @@
 
   .gallery p {
     grid-area: paragraph;
+  }
+
+  .pofd img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--secondary-color);
   }
 }

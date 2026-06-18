@@ -72,6 +72,11 @@
     object-fit: cover;
   }
 
+  .pofd img {
+    width: 60%;
+    height: auto;
+  }
+
   footer {
     display: grid;
     padding: 1rem 1rem;
