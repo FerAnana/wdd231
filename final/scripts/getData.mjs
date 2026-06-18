@@ -75,7 +75,7 @@ function getGallery(data) {
     let container = document.createElement("div");
     container.classList.add("picture");
 
-    let title = document.createElement("h3");
+    let title = document.createElement("h2");
     let date = document.createElement("p");
     let picture = document.createElement("img");
     let button = document.createElement("button");
