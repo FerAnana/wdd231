@@ -69,26 +69,27 @@ function getGallery(data) {
   if (!document.querySelector("#gallery")) return;
 
   const section = document.querySelector("#gallery");
+  const modal = document.querySelector("#modal");
 
   data.forEach((element) => {
     let container = document.createElement("div");
     container.classList.add("picture");
 
-    let title = document.createElement("h2");
+    let title = document.createElement("h3");
     let date = document.createElement("p");
     let picture = document.createElement("img");
-    let description = document.createElement("p");
+    let button = document.createElement("button");
 
     title.textContent = element.title;
     date.innerHTML = `<em>Date</em>: ${element.date}`;
     date.classList.add("pod-date");
     picture.setAttribute("src", element.url);
     picture.setAttribute("alt", element.title);
-    picture.setAttribute("width", "500");
-    picture.setAttribute("heigth", "500");
+    picture.setAttribute("width", "275");
+    picture.setAttribute("heigth", "275");
     picture.setAttribute("loading", "lazy");
-    description.innerHTML = `<strong>Description</strong>: ${element.explanation}`;
-    description.classList.add("pod-description");
+    button.textContent = "Description";
+    button.setAttribute("id", "modal-button");
 
     container.appendChild(title);
     container.appendChild(date);
@@ -99,8 +100,30 @@ function getGallery(data) {
       p.textContent = "There is no Picture of the Day for today.";
       container.appendChild(p);
     }
-    container.appendChild(description);
+    container.appendChild(button);
 
     section.appendChild(container);
+
+    button.addEventListener("click", () => {
+      modal.innerHTML = "";
+      let descriptionTitle = document.createElement("h3");
+      let closeModal = document.createElement("button");
+      let descriptionText = document.createElement("p");
+
+      descriptionTitle.textContent = "Description";
+
+      closeModal.textContent = "❌";
+      descriptionText.textContent = element.explanation;
+
+      modal.appendChild(descriptionTitle);
+      modal.appendChild(closeModal);
+      modal.appendChild(descriptionText);
+
+      modal.showModal();
+
+      closeModal.addEventListener("click", () => {
+        modal.close();
+      });
+    });
   });
 }

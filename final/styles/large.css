@@ -72,9 +72,18 @@
     object-fit: cover;
   }
 
+  /********* POD *********/
+
   .pofd img {
     width: 60%;
     height: auto;
+  }
+
+  /********* GALLERY *********/
+
+  .modal {
+    width: 700px;
+    height: fit-content;
   }
 
   footer {

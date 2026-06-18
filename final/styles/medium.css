@@ -3,6 +3,8 @@
     grid-template-columns: 44px auto 44px;
   }
 
+  /********* INDEX *********/
+
   .pod {
     grid-template-areas:
       "title photo"
@@ -40,10 +42,19 @@
     grid-area: paragraph;
   }
 
+  /********* POD *********/
+
   .pofd img {
     width: 80%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 15px var(--secondary-color);
+  }
+
+  /********* GALLERY *********/
+
+  .modal {
+    width: 500px;
+    height: fit-content;
   }
 }
