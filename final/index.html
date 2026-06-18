@@ -6,21 +6,32 @@
     <meta name="author" content="Fernando Añaña" />
     <meta
       name="description"
-      content="Explore the comprehensive site plan for my WDD231 final project. Includes target audience scenarios, typography, color scheme, and wireframes."
+      content="In AstroDaily discover a stunning new cosmic image every day, explore powerful telescope galleries, and wander through distant galaxies."
     />
-    <link rel="stylesheet" href="style/normalize.css" />
-    <link rel="stylesheet" href="style/small.css" />
-    <link rel="stylesheet" href="style/medium.css" />
-    <link rel="stylesheet" href="style/large.css" />
+    <meta
+      property="og:description"
+      content="In AstroDaily discover a stunning new cosmic image every day, explore powerful telescope galleries, and wander through distant galaxies."
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="AstroDaily" />
+    <meta
+      property="og:url"
+      content="https://feranana.github.io/wdd231/final/index.html"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="favicon.ico" />
     <script src="scripts/responsive-menu.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/modules.mjs" type="modules"></script>
+    <script src="scripts/modules.mjs" type="module"></script>
     <title>AstroDaily</title>
   </head>
   <body>
@@ -33,10 +44,14 @@
           <ul>
             <li><a href="#" class="current">Home</a></li>
             <li>
-              <a href="#">Picture of the Day</a>
+              <a href="https://feranana.github.io/wdd231/final/pod.html"
+                >Picture of the Day</a
+              >
             </li>
             <li>
-              <a href="#">Gallery</a>
+              <a href="https://feranana.github.io/wdd231/final/gallery.html"
+                >Gallery</a
+              >
             </li>
           </ul>
         </nav>
@@ -46,7 +61,11 @@
       <h1>Home</h1>
       <div class="content">
         <section class="pod">
-          <h2><a href="#">Picture of the day</a></h2>
+          <h2>
+            <a href="https://feranana.github.io/wdd231/final/pod.html"
+              >Picture of the day</a
+            >
+          </h2>
           <p>
             Dive into the mysteries of deep space with a daily window into the
             cosmos, showcasing stunning nebulas, distant galaxies, and celestial
@@ -55,14 +74,18 @@
           </p>
           <img
             src="images/galaxy2.webp"
-            width="500"
-            height="250"
-            alt="galaxy"
+            width="700"
+            height="700"
+            alt="Cone Nebula"
             loading="eager"
           />
         </section>
         <section class="gallery">
-          <h2><a href="#">Gallery</a></h2>
+          <h2>
+            <a href="https://feranana.github.io/wdd231/final/gallery.html"
+              >Gallery</a
+            >
+          </h2>
           <p>
             Our gallery brings together a stunning collection of deep-space
             photography, planetary flybys. Wander through breathtaking views of
@@ -71,9 +94,9 @@
           </p>
           <img
             src="images/galaxy1.webp"
-            width="500"
-            height="250"
-            alt="galaxy"
+            width="700"
+            height="700"
+            alt="Hamster Wheel Nebula"
             loading="eager"
           />
         </section>
@@ -87,7 +110,7 @@
         <a href="#">Youtube video</a>
       </div>
       <div class="social-media">
-        <a href="https://youtube.com"
+        <a href="https://github.com/FerAnana/"
           ><img
             src="images/github.svg"
             width="50"
@@ -95,7 +118,7 @@
             alt="Youtube logo"
             loading="lazy"
         /></a>
-        <a href="https://x.com/"
+        <a href="https://www.instagram.com/fer_anana/"
           ><img
             src="images/instagram.svg"
             width="50"
@@ -103,7 +126,7 @@
             alt="X logo"
             loading="lazy"
         /></a>
-        <a href="https://linkedin.com"
+        <a href="https://https://www.linkedin.com/in/fernando-anana/"
           ><img
             src="images/linkedin.svg"
             width="50"
