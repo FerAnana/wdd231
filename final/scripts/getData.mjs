@@ -66,7 +66,7 @@ function getPhoto(data) {
 }
 
 function getGallery(data) {
-  if (!document.querySelector("#gallery")) return;
+  if (!document.querySelector("#modal")) return;
 
   const section = document.querySelector("#gallery");
   const modal = document.querySelector("#modal");
