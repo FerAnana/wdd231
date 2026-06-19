@@ -35,15 +35,15 @@ main a {
 .header-menu {
   display: grid;
   background-color: var(--primary-color);
-  grid-template-columns: 30px auto 44px;
+  grid-template-columns: 50px auto 44px;
   gap: 0.5rem;
 }
 
 .header-menu img {
   grid-column: 1/2;
   width: 100%;
-  padding: 0.5rem;
   height: auto;
+  padding: 0.5rem;
   align-self: center;
 }
 
