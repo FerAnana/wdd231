@@ -1,8 +1,6 @@
-export async function getPicture() {
+export async function getPicture(apiUrl) {
   try {
-    let response = await fetch(
-      "https://api.nasa.gov/planetary/apod?api_key=3sVAP4f1JhsK9EthNnoWUHBShPv2V8fWAhTSc6pg",
-    );
+    let response = await fetch(apiUrl);
     if (response.ok) {
       let data = await response.json();
       getPhoto(data);
@@ -15,11 +13,9 @@ export async function getPicture() {
   }
 }
 
-export async function getAlbum() {
+export async function getAlbum(apiUrl) {
   try {
-    let response = await fetch(
-      "https://api.nasa.gov/planetary/apod?api_key=3sVAP4f1JhsK9EthNnoWUHBShPv2V8fWAhTSc6pg&count=15",
-    );
+    let response = await fetch(apiUrl);
     if (response.ok) {
       let data = await response.json();
       getGallery(data);
@@ -82,7 +78,7 @@ function getGallery(data) {
 
     title.textContent = element.title;
     date.innerHTML = `<em>Date</em>: ${element.date}`;
-    date.classList.add("pod-date");
+    date.classList.add("gallery-date");
     picture.setAttribute("src", element.url);
     picture.setAttribute("alt", element.title);
     picture.setAttribute("width", "275");
@@ -97,7 +93,7 @@ function getGallery(data) {
       container.appendChild(picture);
     } else {
       const p = document.createElement("p");
-      p.textContent = "There is no Picture of the Day for today.";
+      p.textContent = "Picture for this day is not available";
       container.appendChild(p);
     }
     container.appendChild(button);
