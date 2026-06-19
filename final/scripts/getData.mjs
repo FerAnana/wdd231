@@ -1,4 +1,5 @@
 export async function getPicture(apiUrl) {
+  if (!document.querySelector("#pod")) return;
   try {
     let response = await fetch(apiUrl);
     if (response.ok) {
@@ -14,6 +15,7 @@ export async function getPicture(apiUrl) {
 }
 
 export async function getAlbum(apiUrl) {
+  if (!document.querySelector("#modal")) return;
   try {
     let response = await fetch(apiUrl);
     if (response.ok) {
@@ -29,8 +31,6 @@ export async function getAlbum(apiUrl) {
 }
 
 function getPhoto(data) {
-  if (!document.querySelector("#pod")) return;
-
   const container = document.querySelector("#pod");
 
   let title = document.createElement("h2");
@@ -62,8 +62,6 @@ function getPhoto(data) {
 }
 
 function getGallery(data) {
-  if (!document.querySelector("#modal")) return;
-
   const section = document.querySelector("#gallery");
   const modal = document.querySelector("#modal");
 
