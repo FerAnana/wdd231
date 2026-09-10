@@ -19,6 +19,7 @@
 
   .navigation {
     display: flex;
+    align-items: center;
     grid-column: 3/4;
   }
 
@@ -48,6 +49,10 @@
     width: 100%;
     height: auto;
     margin: 0;
+  }
+
+  .button-container {
+    top: 50%;
   }
 
   #discover .card {
@@ -80,23 +85,13 @@
   /********* FOOTER *********/
 
   footer {
-    display: grid;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  footer .address {
-    grid-column: 1/2;
-    justify-self: center;
-  }
-
-  footer .social-media {
-    justify-self: center;
-    grid-column: 2/3;
-  }
-
-  footer .student-info {
-    grid-column: 3/3;
-    justify-self: center;
+    & {
+      line-height: 1.8rem;
+    }
   }
 }

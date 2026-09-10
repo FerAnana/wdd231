@@ -15,6 +15,7 @@
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="../styles/normalize.css" />
   <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/medium.css" />
   <link rel="stylesheet" href="styles/larger.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,9 +57,11 @@
         <source srcset="images/hero-image-medium.webp" media="(min-width: 600px)" />
         <img src="images/hero-image-small.webp" alt="Paysandú landscape" class="hero-img" />
       </picture>
-      <button class="call-to-action">¡Únete!</button>
+      <div class="button-container">
+        <button class="call-to-action">¡Únete!</button>
+      </div>
     </section>
-    <h1>Inicio</h1>
+    <h1 class="inicio">Inicio</h1>
     <div class="principal-menu">
       <section class="current-events">
         <h2>Eventos</h2>
@@ -89,9 +92,9 @@
           loading="lazy" /></a>
     </div>
     <div class="student-info">
+      <p>©<span id="currentYear"></span> | Cámara de Comercio de Paysandú</p>
       <p>WDD231 Class Project</p>
       <p>Fernando Añaña</p>
-      <p>©<span id="currentYear"></span> Cámara de Comercio de Paysandú</p>
       <p id="lastModified"></p>
     </div>
   </footer>
