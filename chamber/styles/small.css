@@ -206,6 +206,7 @@ section h3 {
   position: relative;
   width: 100%;
 }
+
 .hero img {
   width: 100%;
   height: 550px;
@@ -216,6 +217,7 @@ section h3 {
 
 .button-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   position: absolute;
   top: 40%;
@@ -236,6 +238,7 @@ section h3 {
   text-align: center;
   background-color: var(--secondary-accent);
 }
+
 .call-to-action:hover {
   background-color: #ebb9b4;
   font-weight: bold;
