@@ -1,4 +1,8 @@
 @media only screen and (min-width: 64rem) {
+  main {
+    margin: 0;
+  }
+
   .hamburger {
     display: none;
   }
@@ -19,6 +23,7 @@
 
   .navigation {
     display: flex;
+    align-items: center;
     grid-column: 3/4;
   }
 
@@ -68,6 +73,13 @@
   }
 
   /****** Index ******/
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
   .principal-menu {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
