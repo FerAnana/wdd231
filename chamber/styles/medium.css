@@ -85,13 +85,19 @@
   /********* FOOTER *********/
 
   footer {
-    height: 250px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1rem;
     & {
-      line-height: 1.8rem;
+      line-height: 1.5rem;
+    }
+    .social-media {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
     }
   }
 }
