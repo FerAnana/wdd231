@@ -90,6 +90,12 @@ header a {
   width: 100%;
 }
 
+li span {
+  padding-left: 5px;
+  font-size: 0.8rem;
+  color: var(--secondary-accent);
+}
+
 .navigation li {
   margin: 0;
   border: solid 1px black;
@@ -111,6 +117,9 @@ header a {
 
 .navigation a:hover {
   background-color: var(--secondary-color);
+  span {
+    color: var(--primary-color);
+  }
 }
 
 .navigation a {
@@ -155,6 +164,7 @@ section h2 {
 .first-p {
   text-indent: 1.5em;
 }
+
 .stu-photo {
   display: flex;
   flex-direction: column;
@@ -264,21 +274,44 @@ section h2 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.other-certificates {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding-bottom: 1rem;
+
+  p {
+    font-size: 1.2rem;
+
+    a {
+      text-decoration: none;
+      color: var(--secondary-color);
+
+      &:hover {
+        font-weight: bold;
+        color: var(--secondary-accent);
+      }
+    }
+  }
+}
+
 /*************** FOOTER ***************/
 footer {
+  display: grid;
+  align-items: center;
   background-color: var(--primary-color);
   color: white;
   text-align: center;
 }
 
 footer p {
-  padding-bottom: 8px;
+  padding-bottom: 1rem;
 }
 
 .social-media {
   display: flex;
   margin: 0.5rem 0;
-  background-color: white;
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
