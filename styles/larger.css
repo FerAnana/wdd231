@@ -1,5 +1,18 @@
 @media only screen and (min-width: 38rem) {
 
+
+  .portfolio {
+    padding: 1rem 1rem;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  #close-portfolio {
+    top: 0.3rem;
+  }
+
   footer {
     height: 160px;
   }

@@ -25,6 +25,36 @@ main {
 }
 
 /*************** HEADER ***************/
+.portfolio {
+  background-color: #C59B27;
+  color: #1F1125;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+  p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  button {
+    position: absolute;
+    top: 0.3rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  button::before {
+    content: "\00D7";
+  }
+}
+
 header {
   display: grid;
   padding: 5px 0;
